@@ -1,0 +1,22 @@
+{
+  "name": "omscs-notes",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.4.0",
+    "babel-runtime": "^6.26.0",
+    "github-markdown-css": "^3.0.1",
+    "gridsome": "^0.7.0",
+    "vue-markdown": "^2.2.4"
+  },
+  "devDependencies": {
+    "gridsome-plugin-tailwindcss": "^2.2.27",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0"
+  }
+}

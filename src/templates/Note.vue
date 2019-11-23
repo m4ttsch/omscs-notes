@@ -1,0 +1,38 @@
+<template>
+  <Layout>
+    <div class="w-100 max-w-xl m-auto markdown-body">
+      <h1>
+        {{ $page.note.title }}
+      </h1>
+      <p>Total Reading time: <span class="text-teal-600">{{ $page.note.timeToRead }} Minutes</span></p>
+      <div class="content" v-html="$page.note.content" />
+    </div>
+  </Layout>
+</template>
+
+<page-query>
+query Note ($path: String!) {
+  note: note (path: $path) {
+    title
+    path
+    timeToRead
+    content
+  }
+}
+</page-query>
+
+<script>
+import VueMarkdown from 'vue-markdown'
+
+export default {
+  components: { VueMarkdown },
+  metaInfo() {
+    return {
+      title: this.$page.note.title,
+      meta: [
+        { key: 'description', name: 'description', content: this.$page.note.title }
+      ]
+    }
+  }
+}
+</script>
