@@ -22,10 +22,7 @@ query Note ($path: String!) {
 </page-query>
 
 <script>
-import VueMarkdown from 'vue-markdown'
-
 export default {
-  components: { VueMarkdown },
   metaInfo() {
     return {
       title: this.$page.note.title,
