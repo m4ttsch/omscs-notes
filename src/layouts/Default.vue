@@ -1,7 +1,7 @@
 <template lang="html">
-  <div class="layout bg-gray-100">
+  <div class="layout text-gray-700 font-sans bg-white">
     <Header />
-    <div class="pt-24">
+    <div class="pt-20">
       <slot />
     </div>
   </div>

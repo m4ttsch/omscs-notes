@@ -1,11 +1,11 @@
 <template lang="html">
-  <div class="Header font-sans fixed w-full bg-white">
-    <hr class="gradient-border border-0">
-    <header class="header px-8 py-4 border-b border-gray-300 text-gray-900">
+  <div class="Header fixed w-full bg-white">
+    <hr class="gradient-border h-1 border-0">
+    <header class="header px-8 py-4 border-b-2 shadow border-gray-100 text-gray-900">
       <nav class="flex justify-between">
         <div class="flex flex-start">
           <g-link to="/" class="p-2 pr-4">
-            <img src="/img/icons/020-elearning.png" width="24" height="24" />
+            <g-image src="~/assets/images/icons/020-elearning.png" width="24" height="24" />
           </g-link>
           <g-link to="/" class="p-2">GIOS</g-link>
           <g-link to="/" class="p-2">CN</g-link>
@@ -38,7 +38,7 @@ query {
 
 <style scoped>
   .gradient-border {
-    height: 5px;
-    background: linear-gradient(45deg, #7befe4, #1c868e, #4a1453);
+    /* Teal-200, Teal-600, Indigo-900 */
+    background: linear-gradient(45deg, #B2F5EA, #3C366B);
   }
 </style>
