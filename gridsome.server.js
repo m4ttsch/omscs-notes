@@ -4,10 +4,15 @@
 
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
+const site = require('./config/site')
 
 module.exports = function (api) {
-  api.loadSource(({ addCollection }) => {
-    // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
+  api.loadSource(({ addCollection, addMetadata }) => {
+    const keys = Object.keys(site)
+
+    for(const key of keys) {
+      addMetadata(key, site[key])
+    }
   })
 
   api.createPages(({ createPage }) => {

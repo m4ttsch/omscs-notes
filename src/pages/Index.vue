@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="bg-gray-200 relative pt-20 py-32">
+    <div class="relative pt-20 py-32">
       <div class="flex justify-between max-w-5xl w-100 m-auto">
         <div>
           <div>

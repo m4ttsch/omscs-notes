@@ -5,9 +5,14 @@
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
-    "generate-icons": "vsvg -s ./heroicons -t ./src/compiled-icons"
+    "generate-icons": "vsvg -s ./src/assets/icons -t ./src/compiled-icons"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-regular-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/vue-fontawesome": "^0.1.8",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.4.0",
     "github-markdown-css": "^3.0.1",
@@ -15,9 +20,9 @@
     "typeface-lato": "^0.0.75"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
     "gridsome-plugin-tailwindcss": "^2.2.27",
     "node-sass": "^4.13.0",
-    "sass-loader": "^8.0.0",
-    "vue-svgicon": "^3.2.6"
+    "sass-loader": "^8.0.0"
   }
 }

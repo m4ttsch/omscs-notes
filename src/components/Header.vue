@@ -1,18 +1,37 @@
 <template lang="html">
-  <div class="Header fixed w-full bg-white">
+  <div class="Header fixed w-full z-10 bg-white">
     <hr class="gradient-border h-1 border-0">
-    <header class="header px-8 py-4 border-b-2 shadow border-gray-100 text-gray-900">
+    <header class="header border-gray-300 border text-gray-600">
       <nav class="flex justify-between">
-        <div class="flex flex-start">
-          <g-link to="/" class="p-2 pr-4">
-            <g-image src="~/assets/images/icons/020-elearning.png" width="24" height="24" />
+        <div class="flex px-8 pt-4">
+          <g-link to="/" class="p-2 border-b-2 border-transparent hover:text-indigo-800 hover:border-indigo-800">
+            Home
           </g-link>
-          <g-link to="/" class="p-2">GIOS</g-link>
-          <g-link to="/" class="p-2">CN</g-link>
-          <g-link to="/" class="p-2">IIS</g-link>
+          <g-link to="/" class="p-2 border-b-2 border-transparent hover:text-indigo-800 hover:border-indigo-800">
+            GIOS
+          </g-link>
+          <g-link to="/" class="p-2 border-b-2 border-transparent hover:text-indigo-800 hover:border-indigo-800">
+            CN
+          </g-link>
+          <g-link to="/" class="p-2 border-b-2 border-transparent hover:text-indigo-800 hover:border-indigo-800">
+            IIS
+          </g-link>
         </div>
-        <div class="flex-1">
-          <AlgoliaSearch />
+        <div class="flex flex-1 justify-end px-4 py-4">
+          <div class="max-w-xs w-full flex justify-between">
+            <AlgoliaSearch />
+          </div>
+          <div class="flex items-center ml-4 text-gray-400 justify-center">
+            <a :href="$static.metadata.github" class="mx-4 hover:text-teal-300">
+              <font-awesome-icon :icon="['fab', 'github']" size="lg" />
+            </a>
+            <a :href="$static.metadata.linkedin" class="mx-4 hover:text-teal-300">
+              <font-awesome-icon :icon="['fab', 'linkedin-in']" size="lg" />
+            </a>
+            <a :href="`mailto:${$static.metadata.email}`" class=" mx-4 hover:text-teal-300">
+              <font-awesome-icon :icon="['far', 'envelope']" size="lg" />
+            </a>
+          </div>
         </div>
       </nav>
     </header>
@@ -22,7 +41,9 @@
 <static-query>
 query {
   metadata {
-    siteName
+    github
+    linkedin
+    email
   }
 }
 </static-query>
