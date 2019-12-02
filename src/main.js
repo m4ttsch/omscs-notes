@@ -4,7 +4,7 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import 'github-markdown-css/github-markdown.css'
 import VueSVGIcon from 'vue-svgicon'
-require('typeface-source-sans-pro')
+require('typeface-lato')
 
 
 export default function (Vue, { router, head, isClient }) {
