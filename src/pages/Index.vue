@@ -54,7 +54,7 @@
         </div>
         <p class="text-sm text-gray-600">
           Want to say something nice?
-          <a target="_blank" :href="`mailto:${$static.metadata.email}`" class="text-indigo-800">
+          <a target="_blank" rel="noopener noreferrer" :href="`mailto:${$static.metadata.email}`" class="text-indigo-800">
             Contact me!
           </a>
         </p>

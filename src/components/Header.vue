@@ -22,13 +22,13 @@
             <AlgoliaSearch />
           </div>
           <div class="flex items-center ml-4 text-gray-400 justify-center">
-            <a target="_blank" :href="$static.metadata.github" class="mx-4 hover:text-teal-300">
+            <a target="_blank" rel="noopener noreferrer" :href="$static.metadata.github" class="mx-4 hover:text-teal-300">
               <font-awesome-icon :icon="['fab', 'github']" size="lg" />
             </a>
-            <a target="_blank" :href="$static.metadata.linkedin" class="mx-4 hover:text-teal-300">
+            <a target="_blank" rel="noopener noreferrer" :href="$static.metadata.linkedin" class="mx-4 hover:text-teal-300">
               <font-awesome-icon :icon="['fab', 'linkedin-in']" size="lg" />
             </a>
-            <a target="_blank" :href="`mailto:${$static.metadata.email}`" class=" mx-4 hover:text-teal-300">
+            <a target="_blank" rel="noopener noreferrer" :href="`mailto:${$static.metadata.email}`" class=" mx-4 hover:text-teal-300">
               <font-awesome-icon :icon="['far', 'envelope']" size="lg" />
             </a>
           </div>
