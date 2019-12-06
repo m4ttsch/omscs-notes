@@ -17,7 +17,8 @@
     "@gridsome/transformer-remark": "^0.4.0",
     "github-markdown-css": "^3.0.1",
     "gridsome": "^0.7.0",
-    "typeface-lato": "^0.0.75"
+    "typeface-lato": "^0.0.75",
+    "vue-carousel": "^0.18.0"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2",

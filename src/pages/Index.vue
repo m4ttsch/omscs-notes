@@ -16,9 +16,9 @@
             <button class="bg-teal-200 hover:bg-teal-100 text-teal-900 text-lg font-semibold py-3 px-5 border-b-4 border-teal-300 hover:border-teal-200 rounded mr-4">
               See Courses
             </button>
-            <button class="bg-indigo-800 hover:bg-indigo-700 text-white text-lg font-semibold py-3 px-5 border-b-4 border-indigo-900 hover:border-indigo-800 rounded">
+            <a href="#testimonials" class="bg-indigo-800 hover:bg-indigo-700 text-white text-lg font-semibold py-3 px-5 border-b-4 border-indigo-900 hover:border-indigo-800 rounded">
               Testimonials
-            </button>
+            </a>
           </div>
         </div>
         <div>
@@ -27,14 +27,62 @@
       </div>
       <Wave />
     </div>
+    <div class="text-center bg-white p-20" id="testimonials">
+      <div class="w-100 max-w-5xl m-auto">
+        <div class="text-indigo-800">
+          <font-awesome-icon :icon="['fas', 'quote-left']" size="3x" />
+        </div>
+        <div class="max-w-3xl m-auto mb-10">
+          <carousel :per-page="1" :navigate-to="0" paginationActiveColor="#434190">
+            <slide v-for="(testimonial, i) in $static.metadata.testimonials" :key="i">
+              <p class="m-10 text-2xl">
+                {{ testimonial.quote }}
+              </p>
+              <div class="flex justify-center text-lg text-left">
+                <img class="rounded-full" :src="`/assets/images/testimonials/${testimonial.image}`" width="48" height="48"/>
+                <div class="ml-5 flex flex-col justify-center">
+                  <p class="text-xl leading-none">
+                    {{ testimonial.name }}
+                  </p>
+                  <p class="text-gray-500 uppercase text-sm">
+                    {{ testimonial.semester }}
+                  </p>
+                </div>
+              </div>
+            </slide>
+          </carousel>
+        </div>
+        <p class="text-sm text-gray-600">
+          Want to say something nice?
+          <a target="_blank" :href="`mailto:${$static.metadata.email}`" class="text-indigo-800">
+            Contact me!
+          </a>
+        </p>
+      </div>
+    </div>
   </Layout>
 </template>
 
+<static-query>
+query {
+  metadata {
+    email
+    testimonials {
+      name
+      image
+      semester
+      quote
+    }
+  }
+}
+</static-query>
+
 <script>
 import Wave from '~/components/util/GentleWave'
+import { Carousel, Slide } from 'vue-carousel';
 
 export default {
-  components: { Wave },
+  components: { Wave, Carousel, Slide },
   metaInfo: {
     title: 'Home'
   }
