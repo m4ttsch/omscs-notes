@@ -3,9 +3,9 @@
     <hr class="gradient-border h-1 border-0">
     <header class="header border-gray-300 border text-gray-600">
       <nav class="flex justify-between">
-        <div class="flex px-8 pt-4">
-          <g-link to="/" class="p-2 border-b-2 border-transparent hover:text-indigo-800 hover:border-indigo-800">
-            Home
+        <div class="flex px-8 pt-4 content-center">
+          <g-link to="/" class="p-2 mr-4">
+            <g-image src="~/assets/images/favicon.png" width="30" height="30"/>
           </g-link>
           <g-link to="/" class="p-2 border-b-2 border-transparent hover:text-indigo-800 hover:border-indigo-800">
             GIOS

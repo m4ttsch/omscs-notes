@@ -5,6 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
+  icon: './src/assets/images/favicon.png',
   siteName: 'OMSCS Notes',
   plugins: [
     {
