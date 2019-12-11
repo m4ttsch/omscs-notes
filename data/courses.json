@@ -1,0 +1,29 @@
+{
+  "courses": [{
+    "name": "Operating Systems",
+    "code": "CS6200",
+    "semester": "Fall 2018",
+    "author": "Matt Schlenker",
+    "grade": "A",
+    "img": "/img/icons/049-operating-system.png",
+    "docs": "/operating-systems/welcome",
+    "completed": true
+  },{
+    "name": "Computer Networking",
+    "code": "CS6250",
+    "semester": "Spring 2019",
+    "author": "Matt Schlenker",
+    "grade": "A",
+    "img": "/img/icons/037-global-network.png",
+    "docs": "/computer-networks/welcome",
+    "completed": true,
+  },{
+    "name": "Information Security",
+    "code": "CS6035",
+    "semester": "Fall 2019",
+    "author": "Matt Schlenker",
+    "img": "/img/icons/039-hacker.png",
+    "docs": "/information-security/welcome",
+    "started": true
+  }]
+}
