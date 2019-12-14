@@ -50,7 +50,7 @@ query {
 import { testimonials } from '~/../data/testimonials.json';
 
 export default {
-    name: 'Index',
+    name: 'Testimonials',
     components: {
       Carousel: () =>
         import ('vue-carousel')
