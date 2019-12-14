@@ -45,7 +45,7 @@ query {
 </static-query>
 
 <script>
-import { Carousel, Slide } from 'vue-carousel';
+import { Carousel, Slide } from 'vue-carousel/src/index';
 import { testimonials } from '~/../data/testimonials.json';
 
 export default {
