@@ -11,7 +11,7 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'notes/**/*.md',
+        path: 'notes/**/!(README)*.md',
         typeName: 'Note'
       }
     },
