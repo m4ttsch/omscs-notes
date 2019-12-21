@@ -7,13 +7,13 @@
           <g-link to="/" class="p-2 mr-4">
             <g-image src="~/assets/images/favicon.png" width="30" height="30"/>
           </g-link>
-          <g-link to="/" class="p-2 border-b-2 border-transparent hover:text-indigo-800 hover:border-indigo-800">
+          <g-link to="/operating-systems/welcome" class="p-2 border-b-2 border-transparent hover:text-indigo-800 hover:border-indigo-800">
             GIOS
           </g-link>
-          <g-link to="/" class="p-2 border-b-2 border-transparent hover:text-indigo-800 hover:border-indigo-800">
+          <g-link to="/computer-networks/welcome" class="p-2 border-b-2 border-transparent hover:text-indigo-800 hover:border-indigo-800">
             CN
           </g-link>
-          <g-link to="/" class="p-2 border-b-2 border-transparent hover:text-indigo-800 hover:border-indigo-800">
+          <g-link to="/information-security/welcome" class="p-2 border-b-2 border-transparent hover:text-indigo-800 hover:border-indigo-800">
             IIS
           </g-link>
         </div>
