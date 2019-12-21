@@ -1,10 +1,10 @@
 <template>
   <Layout>
-    <div class="w-100 max-w-xl m-auto markdown-body">
+    <div class="w-100 pt-12 pb-20 max-w-xl m-auto markdown-body">
       <h1>
         {{ $page.note.title }}
       </h1>
-      <p>Total Reading time: <span class="text-teal-600">{{ $page.note.timeToRead }} Minutes</span></p>
+      <p>Total Reading time: <span class="text-indigo-800">{{ $page.note.timeToRead }} Minutes</span></p>
       <div class="content" v-html="$page.note.content" />
     </div>
   </Layout>
@@ -33,3 +33,15 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.markdown-body {
+  h1, h2, h3, h4, h5, h6 {
+    @apply border-none;
+  }
+
+  a {
+    @apply text-teal-600;
+  }
+}
+</style>

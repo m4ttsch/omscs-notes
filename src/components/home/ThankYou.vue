@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="thank-you">
+  <div class="thank-you bg-indigo-100">
     <div class="flex justify-end">
       <div class="w-full max-w-lg p-12">
         <div>
