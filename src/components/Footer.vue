@@ -3,7 +3,7 @@
     <div class="w-100 max-w-5xl m-auto text-center py-4">
       <div class="text-xs">
         <p>OMSCS Notes is made with
-          <font-awesome-icon class="text-red-600" :icon="['fas', 'heart']" size="md" />
+          <font-awesome-icon class="text-red-600" :icon="['fas', 'heart']" />
           in NYC by Matt Schlenker.
         </p>
         <p>

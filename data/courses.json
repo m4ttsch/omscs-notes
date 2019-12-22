@@ -1,12 +1,12 @@
 {
   "courses": [{
-    "name": "Operating Systems",
+    "name": "Graduate Introduction to Operating Systems",
     "code": "CS6200",
     "semester": "Fall 2018",
     "author": "Matt Schlenker",
     "grade": "A",
-    "img": "/img/icons/049-operating-system.png",
-    "docs": "/operating-systems/welcome",
+    "icon": "cs6200.png",
+    "start": "/operating-systems/welcome",
     "completed": true
   },{
     "name": "Computer Networking",
@@ -14,16 +14,25 @@
     "semester": "Spring 2019",
     "author": "Matt Schlenker",
     "grade": "A",
-    "img": "/img/icons/037-global-network.png",
-    "docs": "/computer-networks/welcome",
-    "completed": true,
+    "icon": "cs6250.png",
+    "start": "/computer-networks/welcome",
+    "completed": true
   },{
-    "name": "Information Security",
+    "name": "Introduction to Information Security",
     "code": "CS6035",
     "semester": "Fall 2019",
     "author": "Matt Schlenker",
-    "img": "/img/icons/039-hacker.png",
-    "docs": "/information-security/welcome",
-    "started": true
+    "grade": "A",
+    "icon": "cs6035.png",
+    "start": "/information-security/welcome",
+    "completed": true
+  },{
+    "name": "Machine Learning for Trading",
+    "code": "CS7646",
+    "semester": "Spring 2020",
+    "author": "Matt Schlenker",
+    "icon": "cs7646.png",
+    "start": "/machine-learning-trading/welcome",
+    "completed": false
   }]
 }

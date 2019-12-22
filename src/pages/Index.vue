@@ -3,7 +3,7 @@
     <Hero />
     <Testimonials />
     <ThankYou />
-    <Courses />
+    <Notebooks />
   </Layout>
 </template>
 
@@ -12,10 +12,10 @@
 import Hero from '~/components/home/Hero'
 import Testimonials from '~/components/home/Testimonials'
 import ThankYou from '~/components/home/ThankYou'
-import Courses from '~/components/home/Courses'
+import Notebooks from '~/components/home/Notebooks'
 
 export default {
-  components: { Hero, Testimonials, ThankYou, Courses },
+  components: { Hero, Testimonials, ThankYou, Notebooks },
   metaInfo: {
     title: 'Home'
   }
