@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="w-100 pt-12 pb-20 max-w-xl m-auto markdown-body">
+    <div class="w-100 pt-12 pb-16 max-w-xl m-auto markdown-body">
       <h1>
         {{ $page.note.title }}
       </h1>
