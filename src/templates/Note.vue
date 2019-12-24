@@ -1,28 +1,46 @@
 <template>
   <Layout>
-    <div class="w-100 pt-12 pb-16 max-w-xl m-auto markdown-body">
-      <h1>
-        {{ $page.note.title }}
-      </h1>
-      <p>Total Reading time: <span class="text-indigo-800">{{ $page.note.timeToRead }} Minutes</span></p>
-      <div class="content" v-html="$page.note.content" />
+    <div class="bg-gray-200 p-12">
+      <div class="flex justify-center">
+        <Sidebar :notes="$page.notes.edges" :current="$page.note"/>
+        <div class="w-full max-w-2xl">
+          <Content :note="$page.note" />
+        </div>
+      </div>
     </div>
   </Layout>
 </template>
 
 <page-query>
-query Note ($path: String!) {
-  note: note (path: $path) {
+query Note ($id: ID!, $course: String!) {
+  note: note (id: $id) {
+    course
     title
     path
     timeToRead
     content
   }
+
+  notes: allNote(filter: { course: { eq: $course }}) {
+    edges {
+      node {
+        lecture
+        title
+        path
+      }
+    }
+  }
 }
 </page-query>
 
 <script>
+import Content from '~/components/note/Content'
+import Sidebar from '~/components/note/Sidebar'
+
 export default {
+  name: 'Note',
+  components: { Content, Sidebar },
+
   metaInfo() {
     return {
       title: this.$page.note.title,
@@ -33,15 +51,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-.markdown-body {
-  h1, h2, h3, h4, h5, h6 {
-    @apply border-none;
-  }
-
-  a {
-    @apply text-teal-600;
-  }
-}
-</style>

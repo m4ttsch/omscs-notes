@@ -1,0 +1,114 @@
+{
+  "operating-systems": [
+    {
+      "section": "Start Here",
+      "notes": [
+        "welcome",
+        "textbook-information",
+        "download-pdf"
+      ]
+    },
+    {
+      "section": "Lecture Notes",
+      "notes": [
+        "introduction-to-operating-systems",
+        "processes-and-process-management",
+        "threads-and-concurrency",
+        "threads-case-study-pthreads",
+        "thread-design-considerations",
+        "thread-performance-considerations",
+        "scheduling",
+        "memory-management",
+        "inter-process-communication",
+        "synchronization-constructs",
+        "io-management",
+        "virtualization",
+        "remote-procedure-calls",
+        "distributed-file-systems",
+        "distributed-shared-memory",
+        "datacenter-technologies"
+      ]
+    },
+    {
+      "section": "Exam Review",
+      "notes": [
+        "midterm-exam-review-questions",
+        "final-exam-review-questions"
+      ]
+    }
+  ],
+  "computer-networks": [
+    {
+      "section": "Start Here",
+      "notes": [
+        "welcome",
+        "textbook-information",
+        "download-pdf"
+      ]
+    },
+    {
+      "section": "Lecture Notes",
+      "notes": [
+        "architecture-and-principles",
+        "switching",
+        "routing",
+        "naming-addressing-forwarding",
+        "router-design-basics",
+        "dns",
+        "congestion-control-streaming",
+        "rate-limiting-and-traffic-shaping",
+        "content-distribution",
+        "software-defined-networking",
+        "programming-sdns",
+        "traffic-engineering",
+        "network-security",
+        "internet-worms",
+        "spam",
+        "denial-of-service-attacks"
+      ]
+    }
+  ],
+  "information-security": [
+    {
+      "section": "Start Here",
+      "notes": [
+        "welcome",
+        "textbook-information"
+      ]
+    },
+    {
+      "section": "Lecture Notes",
+      "notes": [
+        "the-security-mindset",
+        "software-security",
+        "operating-system-security",
+        "authentication",
+        "access-control",
+        "mandatory-access-control",
+        "database-security",
+        "malicious-code",
+        "modern-malware",
+        "firewalls",
+        "intrusion-detection",
+        "introduction-to-cryptography",
+        "symmetric-encryption",
+        "public-key-cryptography",
+        "hashes",
+        "security-protocols",
+        "ipsec-and-tls",
+        "wireless-and-mobile-security",
+        "web-security",
+        "cyber-security",
+        "law-ethics-and-privacy"
+      ]
+    },
+    {
+      "section": "Exam Review",
+      "notes": [
+        "udacity-quizzes",
+        "midterm-1-study-guide",
+        "midterm-2-study-guide"
+      ]
+    }
+  ]
+}

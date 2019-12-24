@@ -1,7 +1,7 @@
 <template lang="html">
-  <div class="layout text-gray-700 font-sans bg-gray-100 min-h-screen flex flex-col">
+  <div class="text-gray-700 font-sans min-h-screen flex flex-col">
     <Header />
-    <div class="pt-20 flex-1">
+    <div class="pt-16 flex-1">
       <slot />
     </div>
     <Footer />

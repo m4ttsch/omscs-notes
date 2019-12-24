@@ -27,8 +27,5 @@ module.exports = {
         shouldPurgeUnusedKeyframes: true,
       }
     }
-  ],
-  templates: {
-    Note: '/:course/:lecture'
-  }
+  ]
 }

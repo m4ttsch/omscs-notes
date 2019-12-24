@@ -15,7 +15,29 @@ module.exports = function (api) {
     }
   })
 
-  api.createPages(({ createPage }) => {
-    // Use the Pages API here: https://gridsome.org/docs/pages-api/
+  api.createPages(async ({ createRoute, graphql }) => {
+    const { data } = await graphql(`{
+      allNote {
+        edges {
+          node {
+            id
+            lecture
+            course
+          }
+        }
+      }
+    }`)
+
+    const noteRoute = createRoute({
+      path: `/:course/:lecture`,
+      component: './src/templates/Note.vue'
+    })
+
+    data.allNote.edges.forEach(({ node: { id, course, lecture }}) => {
+      noteRoute.addPage({
+        path: `/${course}/${lecture}`,
+        context: { id, course }
+      })
+    })
   })
 }
