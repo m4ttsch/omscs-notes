@@ -11,7 +11,8 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'notes/**/!(README)*.md',
+        path: './**/!(README)*.md',
+        baseDir: './notes',
         typeName: 'Note',
         remark: {
           plugins: [

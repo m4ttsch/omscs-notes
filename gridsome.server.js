@@ -14,30 +14,4 @@ module.exports = function (api) {
       addMetadata(key, site[key])
     }
   })
-
-  api.createPages(async ({ createRoute, graphql }) => {
-    const { data } = await graphql(`{
-      allNote {
-        edges {
-          node {
-            id
-            lecture
-            course
-          }
-        }
-      }
-    }`)
-
-    const noteRoute = createRoute({
-      path: `/:course/:lecture`,
-      component: './src/templates/Note.vue'
-    })
-
-    data.allNote.edges.forEach(({ node: { id, course, lecture }}) => {
-      noteRoute.addPage({
-        path: `/${course}/${lecture}`,
-        context: { id, course }
-      })
-    })
-  })
 }
