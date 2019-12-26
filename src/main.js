@@ -14,6 +14,7 @@ library.add(fab)
 library.add(far)
 
 require('github-markdown-css/github-markdown.css')
+import 'prismjs/themes/prism.css'
 require('typeface-lato')
 
 export default function (Vue, { router, head, isClient }) {

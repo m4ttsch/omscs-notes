@@ -12,7 +12,12 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'notes/**/!(README)*.md',
-        typeName: 'Note'
+        typeName: 'Note',
+        remark: {
+          plugins: [
+            '@gridsome/remark-prismjs'
+          ]
+        }
       }
     },
     {
