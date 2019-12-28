@@ -1,24 +1,24 @@
 <template lang="html">
   <div class="notebooks">
     <div class="bg-white">
-      <div class="w-100 max-w-5xl m-auto py-16">
-        <h1 class="pb-16 text-4xl text-indigo-800 text-center">Notebooks</h1>
+      <div class="w-100 max-w-5xl m-auto py-8 sm:py-16 px-8 sm:px-0">
+        <h1 class="pb-8 sm:pb-16 text-4xl text-center">Notebooks</h1>
         <div class="flex justify-around flex-wrap">
           <div class="w-full max-w-md" v-for="(course, i) in courses" :key="i">
-            <a :href="course.start" class="block shadow border rounded mb-16 hover:shadow-xl">
+            <a :href="course.start" class="block shadow border rounded mb-8 sm:mb-16 hover:shadow-xl">
               <div class="h-full">
-                <div class="flex items-center p-16">
-                  <img :src="`/assets/images/courses/${course.icon}`" class="h-24 w-24 mr-6">
+                <div class="flex items-center px-6 py-8 sm:p-16">
+                  <img :src="`/assets/images/courses/${course.icon}`" class="h-12 w-12 sm:h-24 sm:w-24 mr-6">
                   <div>
                     <p class="text-gray-500 leading-none text-xs">{{ course.code }}</p>
-                    <h1 class="text-xl leading-none mb-2">{{ course.name }}</h1>
+                    <h1 class="text-xl leading-none mb-2 text-indigo-800">{{ course.name }}</h1>
                     <p class="text-gray-500">by {{ course.author }}</p>
                   </div>
                 </div>
-                <div class="text-sm">
+                <div class="text-xs sm:text-sm">
                   <div v-if="course.completed" class="flex justify-between rounded rounded-t-none px-5 py-3 bg-gray-100 text-gray-500">
                     <p>
-                      Course completed in {{ course.semester }}.
+                      Completed in {{ course.semester }}.
                     </p>
                     <p>
                       Grade received: {{ course.grade }}

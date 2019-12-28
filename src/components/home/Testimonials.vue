@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="testimonials">
-    <div class="text-center bg-white p-20" id="testimonials">
+    <div class="text-center bg-white py-20 px-10 sm:px-20" id="testimonials">
       <div class="w-100 max-w-5xl m-auto">
         <div class="text-indigo-800">
           <font-awesome-icon :icon="['fas', 'quote-left']" size="3x" />
@@ -9,11 +9,11 @@
           <ClientOnly>
             <carousel :per-page="1" :navigate-to="0" paginationActiveColor="#434190">
               <slide v-for="(testimonial, i) in testimonials" :key="i">
-                <p class="m-10 text-2xl">
+                <p class="mx-0 sm:mx-10 my-10 text-lg sm:text-2xl">
                   {{ testimonial.quote }}
                 </p>
                 <div class="flex justify-center text-lg text-left">
-                  <img class="rounded-full" :src="`/assets/images/testimonials/${testimonial.image}`" width="48" height="48"/>
+                  <img class="rounded-full h-12" :src="`/assets/images/testimonials/${testimonial.image}`" width="48" height="48"/>
                   <div class="ml-5 flex flex-col justify-center">
                     <p class="text-xl leading-none">
                       {{ testimonial.name }}
