@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="hero bg-indigo-100">
-    <div class="relative px-10 md:px-0 pt-24 sm:pt-32 py-32">
+    <div class="relative px-10 md:px-0 pt-16 sm:pt-32 py-32">
       <div class="flex justify-center lg:justify-between max-w-5xl w-100 m-auto">
         <div>
           <div>

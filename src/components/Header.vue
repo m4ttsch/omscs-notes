@@ -1,6 +1,6 @@
 <template lang="html">
-  <div class="Header">
-    <header class="shadow fixed w-full bg-white z-10">
+  <div class="Header sticky top-0 z-10">
+    <header class="w-full bg-white border-gray-300 border-b relative">
       <nav class="py-4 px-4 sm:px-8 flex items-center">
         <div class="mr-4 sm:mr-8">
           <IconHomeLink />
@@ -29,7 +29,7 @@
           </div>
         </div>
       </nav>
-      <div class="flex items-center justify-between py-4 px-4 sm:px-8 border-gray-300 border-t" v-show="expanded">
+      <div v-show="expanded" class="absolute flex md:hidden items-center justify-between py-4 px-4 sm:px-8 border-gray-300 border-b border-t bg-white w-full">
         <div class="text-gray-600">
           <PrimaryNavLinks />
         </div>
