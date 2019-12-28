@@ -2,7 +2,7 @@
   <div class="thank-you bg-indigo-100">
     <div class="block sm:flex justify-end">
       <div class="block sm:hidden w-full hero-pattern h-16" />
-      <div class="max-w-lg p-12">
+      <div class="max-w-lg p-12 py-24 sm:py-32">
         <div>
           <h1 class="text-4xl mb-6 leading-tight">Thank you for visiting!</h1>
           <p>
