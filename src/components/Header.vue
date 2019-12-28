@@ -1,65 +1,72 @@
 <template lang="html">
-  <div class="Header fixed w-full z-10 bg-white">
-    <hr class="gradient-border h-1 border-0">
-    <header class="header border-gray-300 border text-gray-600">
-      <nav class="flex justify-between">
-        <div class="flex px-8 pt-4 content-center">
-          <g-link to="/" class="p-2 mr-4">
-            <g-image src="~/assets/images/favicon.png" width="30" height="30"/>
-          </g-link>
-          <g-link to="/operating-systems/welcome" class="p-2 border-b-2 border-transparent hover:text-indigo-800 hover:border-indigo-800">
-            GIOS
-          </g-link>
-          <g-link to="/computer-networks/welcome" class="p-2 border-b-2 border-transparent hover:text-indigo-800 hover:border-indigo-800">
-            CN
-          </g-link>
-          <g-link to="/information-security/welcome" class="p-2 border-b-2 border-transparent hover:text-indigo-800 hover:border-indigo-800">
-            IIS
-          </g-link>
+  <div class="Header">
+    <header class="shadow fixed w-full bg-white z-10">
+      <nav class="py-4 px-4 sm:px-8 flex items-center">
+        <div class="mr-4 sm:mr-8">
+          <IconHomeLink />
         </div>
-        <div class="flex flex-1 justify-end px-4 py-4">
-          <div class="max-w-xs w-full flex justify-between">
+        <div class="text-gray-600 hidden md:block">
+          <PrimaryNavLinks />
+        </div>
+        <div class="flex flex-row-reverse flex-1">
+          <div class="w-full md:max-w-xs">
             <AlgoliaSearch />
           </div>
-          <div class="flex items-center ml-4 text-gray-400 justify-center">
-            <a target="_blank" rel="noopener noreferrer" :href="$static.metadata.github" class="mx-4 hover:text-teal-300">
-              <font-awesome-icon :icon="['fab', 'github']" size="lg" />
+        </div>
+        <div class="ml-8 text-gray-400 hidden md:block">
+          <ExternalLinks />
+        </div>
+        <div class="ml-4 sm:ml-8 block md:hidden text-indigo-800 cursor-pointer">
+          <div class="w-5" v-if="!expanded">
+            <a href="#" @click.prevent="expanded = true">
+              <font-awesome-icon :icon="['fas', 'bars']" size="lg" />
             </a>
-            <a target="_blank" rel="noopener noreferrer" :href="$static.metadata.linkedin" class="mx-4 hover:text-teal-300">
-              <font-awesome-icon :icon="['fab', 'linkedin-in']" size="lg" />
-            </a>
-            <a target="_blank" rel="noopener noreferrer" :href="`mailto:${$static.metadata.email}`" class=" mx-4 hover:text-teal-300">
-              <font-awesome-icon :icon="['far', 'envelope']" size="lg" />
+          </div>
+          <div class="w-5" v-else>
+            <a href="#" @click.prevent="expanded = false">
+              <font-awesome-icon :icon="['fas', 'times']" size="lg" />
             </a>
           </div>
         </div>
       </nav>
+      <div class="flex items-center justify-between py-4 px-4 sm:px-8 border-gray-300 border-t" v-show="expanded">
+        <div class="text-gray-600">
+          <PrimaryNavLinks />
+        </div>
+        <div class="text-gray-400">
+          <ExternalLinks />
+        </div>
+      </div>
     </header>
   </div>
 </template>
 
-<static-query>
-query {
-  metadata {
-    github
-    linkedin
-    email
-  }
-}
-</static-query>
-
 <script>
-  import AlgoliaSearch from './AlgoliaSearch'
+  import IconHomeLink from './header/IconHomeLink'
+  import AlgoliaSearch from './header/AlgoliaSearch'
+  import PrimaryNavLinks from './header/PrimaryNavLinks'
+  import ExternalLinks from './header/ExternalLinks'
 
   export default {
     name: 'Header',
-    components: { AlgoliaSearch }
+    components: { AlgoliaSearch, IconHomeLink, PrimaryNavLinks, ExternalLinks },
+
+    data() {
+      return {
+        expanded: false
+      }
+    }
   }
 </script>
 
-<style scoped>
-  .gradient-border {
-    /* Teal-200, Teal-600, Indigo-900 */
-    background: linear-gradient(45deg, #B2F5EA, #3C366B);
+<style lang="scss" scoped>
+  header {
+    &::before {
+      content: "";
+      height: 4px;
+      width: 100%;
+      display: block;
+      background: linear-gradient(45deg, #B2F5EA, #3C366B);
+    }
   }
 </style>

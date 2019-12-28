@@ -4,7 +4,7 @@
       <div class="flex justify-center lg:justify-between max-w-5xl w-100 m-auto">
         <div>
           <div>
-            <h1 class="text-4xl sm:text-6xl leading-none text-gray-800">
+            <h1 class="text-4xl sm:text-6xl leading-none">
               OMSCS Notes
             </h1>
             <h2 class="text-xl mt-2 text-gray-600 leading-tight sm:text-2xl mt-0">
