@@ -7,7 +7,7 @@
             <h1 class="text-4xl sm:text-6xl leading-none">
               OMSCS Notes
             </h1>
-            <h2 class="text-xl mt-2 text-gray-600 leading-tight sm:text-2xl mt-0">
+            <h2 class="text-xl sm:text-2xl mt-2 text-gray-600 leading-tight">
               Clear, organized, and free lecture summaries.
             </h2>
             <p class="text-sm sm:text-md mt-8 mb-10 leading-relaxed max-w-lg">
