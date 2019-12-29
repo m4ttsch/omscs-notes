@@ -1,10 +1,10 @@
 <template>
   <Layout>
-    <Hero />
+    <Hero @scrollIntoView="_scrollIntoView"/>
     <Wave />
-    <Testimonials />
+    <Testimonials ref="testimonials" />
     <ThankYou />
-    <Notebooks />
+    <Notebooks ref="notebooks" />
   </Layout>
 </template>
 
@@ -17,9 +17,20 @@ import ThankYou from '~/components/home/ThankYou'
 import Notebooks from '~/components/home/Notebooks'
 
 export default {
+  name: 'Home',
   components: { Hero, Wave, Testimonials, ThankYou, Notebooks },
+
   metaInfo: {
     title: 'Home'
+  },
+
+  methods: {
+    _scrollIntoView(target) {
+      window.scrollTo({
+        top: this.$refs[target].$el.getBoundingClientRect().top - 50,
+        behavior: 'smooth'
+      })
+    }
   }
 }
 </script>

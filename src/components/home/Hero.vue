@@ -15,12 +15,12 @@
           most importantly, free. I hope they help you on your journey
           here. Happy studying!
         </p>
-        <a class="bg-indigo-800 hover:bg-indigo-700 text-white text-lg font-semibold py-3 px-5 border-b-4 border-indigo-900 hover:border-indigo-800 rounded mr-4">
+        <a href="#" @click.prevent="$emit('scrollIntoView', 'notebooks')" class="bg-indigo-800 hover:bg-indigo-700 text-white text-lg font-semibold py-3 px-5 border-b-4 border-indigo-900 hover:border-indigo-800 rounded mr-4">
           Notebooks
         </a>
-        <button class="bg-teal-200 hover:bg-teal-100 text-teal-900 text-lg font-semibold py-3 px-5 border-b-4 border-teal-300 hover:border-teal-200 rounded">
+        <a href="#" @click.prevent="$emit('scrollIntoView', 'testimonials')" class="bg-teal-200 hover:bg-teal-100 text-teal-900 text-lg font-semibold py-3 px-5 border-b-4 border-teal-300 hover:border-teal-200 rounded">
           Testimonials
-        </button>
+        </a>
       </div>
       <div class="hidden lg:block">
         <g-image src="~/assets/images/dev_productivity.svg" width="400" />
