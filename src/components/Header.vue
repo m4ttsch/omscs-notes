@@ -17,19 +17,40 @@
           <ExternalLinks />
         </div>
         <div class="ml-4 sm:ml-8 block md:hidden text-indigo-800 cursor-pointer">
-          <div class="w-5" v-if="!expanded">
-            <a href="#" @click.prevent="expanded = true">
-              <font-awesome-icon :icon="['fas', 'bars']" size="lg" />
+          <div
+            v-if="!expanded"
+            class="w-5"
+          >
+            <a
+              href="#"
+              @click.prevent="expanded = true"
+            >
+              <font-awesome-icon
+                :icon="['fas', 'bars']"
+                size="lg"
+              />
             </a>
           </div>
-          <div class="w-5" v-else>
-            <a href="#" @click.prevent="expanded = false">
-              <font-awesome-icon :icon="['fas', 'times']" size="lg" />
+          <div
+            v-else
+            class="w-5"
+          >
+            <a
+              href="#"
+              @click.prevent="expanded = false"
+            >
+              <font-awesome-icon
+                :icon="['fas', 'times']"
+                size="lg"
+              />
             </a>
           </div>
         </div>
       </nav>
-      <div v-show="expanded" class="absolute flex md:hidden items-center justify-between py-4 px-4 sm:px-8 border-gray-300 border-b border-t bg-white w-full">
+      <div
+        v-show="expanded"
+        class="absolute flex md:hidden items-center justify-between py-4 px-4 sm:px-8 border-gray-300 border-b border-t bg-white w-full"
+      >
         <div class="text-gray-600">
           <PrimaryNavLinks />
         </div>

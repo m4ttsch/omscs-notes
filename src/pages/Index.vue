@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <Hero @scrollIntoView="_scrollIntoView"/>
+    <Hero @scrollIntoView="_scrollIntoView" />
     <Wave />
     <Testimonials ref="testimonials" />
     <ThankYou />

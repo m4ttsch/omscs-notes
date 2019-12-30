@@ -2,28 +2,63 @@
   <div class="ExternalLinks">
     <div class="flex">
       <div class="icon-link">
-        <a target="_blank" rel="noopener noreferrer" :href="$static.metadata.github">
-          <font-awesome-icon :icon="['fab', 'github']" size="lg"/>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          :href="$static.metadata.github"
+        >
+          <font-awesome-icon
+            :icon="['fab', 'github']"
+            size="lg"
+          />
         </a>
       </div>
       <div class="icon-link">
-        <a target="_blank" rel="noopener noreferrer" :href="$static.metadata.linkedin">
-          <font-awesome-icon :icon="['fab', 'linkedin-in']" size="lg" />
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          :href="$static.metadata.linkedin"
+        >
+          <font-awesome-icon
+            :icon="['fab', 'linkedin-in']"
+            size="lg"
+          />
         </a>
       </div>
       <div class="icon-link border-gray-300 border-r-2 pr-4">
-        <a target="_blank" rel="noopener noreferrer" :href="`mailto:${$static.metadata.email}`">
-          <font-awesome-icon :icon="['far', 'envelope']" size="lg" />
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          :href="`mailto:${$static.metadata.email}`"
+        >
+          <font-awesome-icon
+            :icon="['far', 'envelope']"
+            size="lg"
+          />
         </a>
       </div>
       <div class="icon-link">
-        <a target="_blank" rel="noopener noreferrer" :href="$static.metadata.amazon">
-          <font-awesome-icon :icon="['fab', 'amazon']" size="lg" />
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          :href="$static.metadata.amazon"
+        >
+          <font-awesome-icon
+            :icon="['fab', 'amazon']"
+            size="lg"
+          />
         </a>
       </div>
       <div class="icon-link">
-        <a target="_blank" rel="noopener noreferrer" :href="$static.metadata.paypal">
-          <font-awesome-icon :icon="['fab', 'paypal']" size="lg" />
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          :href="$static.metadata.paypal"
+        >
+          <font-awesome-icon
+            :icon="['fab', 'paypal']"
+            size="lg"
+          />
         </a>
       </div>
     </div>
@@ -31,15 +66,15 @@
 </template>
 
 <static-query>
-query {
-  metadata {
-    github
-    linkedin
-    email
-    paypal
-    amazon
+  query {
+    metadata {
+      github
+      linkedin
+      email
+      paypal
+      amazon
+    }
   }
-}
 </static-query>
 
 <script>

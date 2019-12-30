@@ -5,7 +5,12 @@
         <h1 class="text-6xl leading-none">
           404.
         </h1>
-        <a href="/" class="text-indigo-800">Let's go home.</a>
+        <a
+          href="/"
+          class="text-indigo-800"
+        >
+          Let's go home.
+        </a>
       </div>
     </div>
   </Layout>
