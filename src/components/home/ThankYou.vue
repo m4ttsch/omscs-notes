@@ -1,5 +1,8 @@
 <template lang="html">
-  <div id="thank-you" class="thank-you bg-indigo-100">
+  <div
+    id="thank-you"
+    class="thank-you bg-indigo-100"
+  >
     <div class="block sm:flex justify-end">
       <div class="block sm:hidden w-full hero-pattern h-16" />
       <div class="max-w-lg p-12 py-24 sm:py-32">
@@ -13,21 +16,42 @@
           <ul class="my-5 ml-3 list-disc list-inside">
             <li class="mb-2">
               making a donation via
-              <a class="border-b-4 border-teal-200" :href="$static.metadata.paypal">
+              <a
+                class="border-b-4 border-teal-200"
+                :href="$static.metadata.paypal"
+              >
                 PayPal
               </a>
             </li>
             <li class="mb-2">
               using my
-              <a class="border-b-4 border-teal-200" :href="$static.metadata.amazon">Amazon</a>
-              affiliate link
-              <v-popover placement="top-start" container="#thank-you" class="inline-block" trigger="hover click" boundariesElement="body">
+              <a
+                class="border-b-4 border-teal-200"
+                :href="$static.metadata.amazon"
+              >Amazon</a>
+              referral link
+              <v-popover
+                placement="top-start"
+                container="#thank-you"
+                class="inline-block"
+                trigger="hover click"
+                boundaries-element="body"
+              >
                 <sup class="hover:text-gray-500 cursor-pointer">
-                  <font-awesome-icon :icon="['far', 'question-circle']" size="xs"/>
+                  <font-awesome-icon
+                    :icon="['far', 'question-circle']"
+                    size="xs"
+                  />
                 </sup>
-                <div slot="popover" class="bg-gray-700 text-gray-100 leading-tight rounded px-4 py-3 text-sm w-64">
+                <div
+                  slot="popover"
+                  class="bg-gray-700 text-gray-100 leading-tight rounded px-4 py-3 text-sm w-64"
+                >
                   For referring you, Amazon pays me a small percentage of your purchase amount as commission.
-                  <a class="text-teal-200" href="https://affiliate-program.amazon.com/">
+                  <a
+                    class="text-teal-200"
+                    href="https://affiliate-program.amazon.com/"
+                  >
                     Read more
                   </a>
                 </div>
@@ -35,16 +59,24 @@
             </li>
             <li class="mb-2">
               giving me a star on
-              <a class="border-b-4 border-teal-200" :href="$static.metadata.github">
+              <a
+                class="border-b-4 border-teal-200"
+                :href="$static.metadata.github"
+              >
                 GitHub
               </a>
             </li>
           </ul>
-          <p>Alternatively, just say
-            <a class="border-b-4 border-teal-200" :href="`mailto:${$static.metadata.email}`">
+          <p>
+            Alternatively, just say
+            <a
+              class="border-b-4 border-teal-200"
+              :href="`mailto:${$static.metadata.email}`"
+            >
               hello
             </a>
-          .</p>
+            .
+          </p>
         </div>
       </div>
       <div class="w-0 sm:w-1/2 hero-pattern" />
@@ -55,14 +87,14 @@
 
 
 <static-query>
-query {
-  metadata {
-    paypal
-    amazon
-    github
-    email
+  query {
+    metadata {
+      paypal
+      amazon
+      github
+      email
+    }
   }
-}
 </static-query>
 
 <script>
