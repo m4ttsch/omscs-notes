@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="Sidebar">
-    <div class="p-5 mr-10 text-gray-600 sticky overflow-y-auto">
+    <div class="w-full p-5 md:mr-10 text-gray-600 h-full md:overflow-y-auto">
       <div v-for="({ section, notes }) in sidebarSections" :key="section">
         <div class="mb-5">
           <p class="text-indigo-800 text-xl mb-3">
@@ -52,12 +52,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.Sidebar {
-  & > div {
-    top: 8rem;
-    max-height: 36rem;
-  }
-}
-</style>

@@ -11,7 +11,7 @@
 
 <script>
 import Hero from '~/components/home/Hero'
-import Wave from '~/components/util/GentleWave'
+import Wave from '~/components/home/GentleWave'
 import Testimonials from '~/components/home/Testimonials'
 import ThankYou from '~/components/home/ThankYou'
 import Notebooks from '~/components/home/Notebooks'

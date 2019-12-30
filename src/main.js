@@ -2,6 +2,7 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import DefaultLayout from '~/layouts/Default.vue'
+import NoteLayout from '~/layouts/Note.vue'
 import VTooltip from 'v-tooltip'
 
 
@@ -24,4 +25,5 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('font-awesome-icon', FontAwesomeIcon)
   Vue.use(VTooltip)
   Vue.component('Layout', DefaultLayout)
+  Vue.component('NoteLayout', NoteLayout)
 }

@@ -1,14 +1,8 @@
 <template>
-  <Layout>
-    <div class="bg-gray-200 p-12">
-      <div class="flex justify-center">
-        <Sidebar :notes="$page.notes.edges" :current="$page.note"/>
-        <div class="w-full max-w-2xl">
-          <Content :note="$page.note" />
-        </div>
-      </div>
-    </div>
-  </Layout>
+  <NoteLayout>
+    <Sidebar :notes="$page.notes.edges" :current="$page.note"/>
+    <Content :note="$page.note" />
+  </NoteLayout>
 </template>
 
 <page-query>
@@ -19,6 +13,11 @@ query Note ($id: ID!, $course: String!) {
     path
     timeToRead
     content
+    headings {
+      value
+      depth
+      anchor
+    }
   }
 
   notes: allNote(filter: { course: { eq: $course }}) {
