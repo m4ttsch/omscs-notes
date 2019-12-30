@@ -19,6 +19,7 @@
     "github-markdown-css": "^3.0.1",
     "gridsome": "^0.7.0",
     "typeface-lato": "^0.0.75",
+    "v-tooltip": "^2.0.2",
     "vue-carousel": "^0.18.0"
   },
   "devDependencies": {

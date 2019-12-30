@@ -2,6 +2,8 @@
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
 import DefaultLayout from '~/layouts/Default.vue'
+import VTooltip from 'v-tooltip'
+
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
@@ -20,5 +22,6 @@ require('typeface-lato')
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('font-awesome-icon', FontAwesomeIcon)
+  Vue.use(VTooltip)
   Vue.component('Layout', DefaultLayout)
 }
