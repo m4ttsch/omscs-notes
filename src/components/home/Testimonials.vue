@@ -1,19 +1,37 @@
 <template lang="html">
   <div class="testimonials">
-    <div class="text-center bg-white py-20 px-10 sm:px-20" id="testimonials">
+    <div
+      id="testimonials"
+      class="text-center bg-white py-20 px-10 sm:px-20"
+    >
       <div class="w-100 max-w-5xl m-auto">
         <div class="text-indigo-800">
-          <font-awesome-icon :icon="['fas', 'quote-left']" size="3x" />
+          <font-awesome-icon
+            :icon="['fas', 'quote-left']"
+            size="3x"
+          />
         </div>
         <div class="max-w-3xl m-auto mb-10">
           <ClientOnly>
-            <carousel :per-page="1" :navigate-to="0" paginationActiveColor="#434190">
-              <slide v-for="(testimonial, i) in testimonials" :key="i">
+            <carousel
+              :per-page="1"
+              :navigate-to="0"
+              pagination-active-color="#434190"
+            >
+              <slide
+                v-for="(testimonial, i) in testimonials"
+                :key="i"
+              >
                 <p class="mx-0 sm:mx-10 my-10 text-lg sm:text-2xl">
                   {{ testimonial.quote }}
                 </p>
                 <div class="flex justify-center text-lg text-left">
-                  <img class="rounded-full h-12" :src="`/assets/images/testimonials/${testimonial.image}`" width="48" height="48"/>
+                  <img
+                    class="rounded-full h-12"
+                    :src="`/assets/images/testimonials/${testimonial.image}`"
+                    width="48"
+                    height="48"
+                  >
                   <div class="ml-5 flex flex-col justify-center">
                     <p class="text-xl leading-none">
                       {{ testimonial.name }}
@@ -29,7 +47,12 @@
         </div>
         <p class="text-sm text-gray-600">
           Want to say something nice?
-          <a target="_blank" rel="noopener noreferrer" :href="`mailto:${$static.metadata.email}`" class="text-indigo-800">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            :href="`mailto:${$static.metadata.email}`"
+            class="text-indigo-800"
+          >
             Contact me!
           </a>
         </p>
@@ -39,11 +62,11 @@
 </template>
 
 <static-query>
-query {
-  metadata {
-    email
+  query {
+    metadata {
+      email
+    }
   }
-}
 </static-query>
 
 <script>
