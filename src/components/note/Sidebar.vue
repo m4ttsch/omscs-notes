@@ -66,13 +66,3 @@ export default {
 }
 
 </script>
-
-<style lang="scss">
-  @screen lg {
-    .Sidebar > div {
-      @apply sticky;
-      max-height: 48rem;
-      top: 8rem;
-    }
-  }
-</style>
