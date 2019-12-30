@@ -1,6 +1,8 @@
 <template lang="html">
   <div class="text-gray-700 font-sans min-h-screen flex flex-col">
-    <Header />
+    <Header>
+      <slot name="header-slot" />
+    </Header>
     <div class="flex-1">
       <slot />
     </div>

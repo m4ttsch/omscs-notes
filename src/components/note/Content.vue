@@ -1,9 +1,9 @@
 <template lang="html">
   <div class="Content">
-    <div class="p-2 lg:p-12">
-      <div class="w-full max-w-2xl px-16 py-10 rounded shadow m-auto bg-white">
+    <div class="p-2 pb-4 lg:p-12">
+      <div class="w-full max-w-2xl px-8 lg:px-16 py-5 lg:py-10 rounded shadow m-auto bg-white">
         <div
-          class="text-gray-700 markdown-body"
+          class="markdown-body"
           v-html="note.content"
         />
       </div>
