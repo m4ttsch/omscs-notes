@@ -30,10 +30,7 @@
 </template>
 
 <script>
-import Wave from '~/components/util/GentleWave'
-
 export default {
-  name: 'Hero',
-  components: { Wave }
+  name: 'Hero'
 }
 </script>
