@@ -53,7 +53,7 @@
       class="flex md:hidden items-center justify-between py-4 px-4 sm:px-8 border-gray-300 border-b bg-white w-full"
     >
       <div class="text-gray-600">
-        <PrimaryNavLinks />
+        <PrimaryNavLinks @click="expanded = false" />
       </div>
       <div class="text-gray-400">
         <ExternalLinks />

@@ -23,6 +23,7 @@
               <g-link
                 v-else
                 :to="path"
+                @click.native="$emit('click')"
               >
                 {{ title }}
               </g-link>

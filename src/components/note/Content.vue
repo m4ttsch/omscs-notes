@@ -19,6 +19,9 @@ export default {
       type: Object,
       required: true
     }
+  },
+  mounted() {
+    console.log("mounted")
   }
 }
 </script>

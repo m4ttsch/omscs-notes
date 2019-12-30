@@ -6,7 +6,7 @@
         class="text-teal-600 text-xs block text-center bg-white border-gray-300 border-b py-1"
         @click.prevent="navExpanded = !navExpanded"
       >
-        {{ navExpanded ? 'close' : 'navigate this note' }}
+        {{ navExpanded ? 'close' : 'navigate this notebook' }}
       </a>
     </template>
     <template #sidebar:sm>
@@ -18,6 +18,7 @@
           <Sidebar
             :current="$page.currentNote"
             :others="$page.otherNotesInCourse.edges"
+            @click="navExpanded = false"
           />
         </div>
       </div>
