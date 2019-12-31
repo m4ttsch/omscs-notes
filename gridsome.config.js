@@ -16,7 +16,7 @@ module.exports = {
         typeName: 'Note',
         remark: {
           plugins: [
-            '@gridsome/remark-prismjs'
+            [ 'gridsome-plugin-remark-shiki', { theme: 'nord', skipInline: true } ]
           ]
         }
       }

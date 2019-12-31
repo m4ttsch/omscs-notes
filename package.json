@@ -13,11 +13,11 @@
     "@fortawesome/free-regular-svg-icons": "^5.11.2",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
     "@fortawesome/vue-fontawesome": "^0.1.8",
-    "@gridsome/remark-prismjs": "^0.3.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.4.0",
     "github-markdown-css": "^3.0.1",
     "gridsome": "^0.7.0",
+    "gridsome-plugin-remark-shiki": "^0.3.1",
     "typeface-lato": "^0.0.75",
     "v-tooltip": "^2.0.2",
     "vue-carousel": "^0.18.0"
