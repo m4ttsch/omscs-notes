@@ -32,20 +32,18 @@ export default {
     @apply border-none;
   }
 
-  // This is ugly and hacky, but it will have to do for now
   h2, h3 {
-    padding-top: 110px;
-    margin-top: -110px;
+    a:before {
+      content: '';
+      display: block;
+      position: relative;
+      width: 0;
+      height: 7rem;
+      margin-top: -7rem;
 
-    &:first-child {
-      margin-top: -110px !important;
-    }
-
-    @screen lg {
-      padding-top: 90px;
-
-      &:first-child {
-        margin-top: -90px !important;
+      @screen lg {
+        height: 6rem;
+        margin-top: -6rem;
       }
     }
   }
