@@ -37,9 +37,16 @@ export default {
     padding-top: 110px;
     margin-top: -110px;
 
+    &:first-child {
+      margin-top: -110px !important;
+    }
+
     @screen lg {
       padding-top: 90px;
-      margin-top: -90px;
+
+      &:first-child {
+        margin-top: -90px !important;
+      }
     }
   }
 

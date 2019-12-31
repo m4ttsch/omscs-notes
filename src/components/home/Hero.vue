@@ -34,6 +34,7 @@
         <g-image
           src="~/assets/images/dev_productivity.svg"
           width="400"
+          alt="man-studying-on-computer"
         />
       </div>
     </div>

@@ -20,6 +20,7 @@
                   <img
                     :src="`/assets/images/courses/${course.icon}`"
                     class="h-12 w-12 sm:h-24 sm:w-24 mr-6"
+                    :alt="`Icon for ${course.name}`"
                   >
                   <div>
                     <p class="text-gray-500 leading-none text-xs">{{ course.code }}</p>

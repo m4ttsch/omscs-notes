@@ -6,6 +6,7 @@
           target="_blank"
           rel="noopener noreferrer"
           :href="$static.metadata.github"
+          aria-label="github"
         >
           <font-awesome-icon
             :icon="['fab', 'github']"
@@ -18,6 +19,7 @@
           target="_blank"
           rel="noopener noreferrer"
           :href="$static.metadata.linkedin"
+          aria-label="linkedin"
         >
           <font-awesome-icon
             :icon="['fab', 'linkedin-in']"
@@ -30,6 +32,7 @@
           target="_blank"
           rel="noopener noreferrer"
           :href="`mailto:${$static.metadata.email}`"
+          aria-label="email"
         >
           <font-awesome-icon
             :icon="['far', 'envelope']"
@@ -42,6 +45,7 @@
           target="_blank"
           rel="noopener noreferrer"
           :href="$static.metadata.amazon"
+          aria-label="amazon"
         >
           <font-awesome-icon
             :icon="['fab', 'amazon']"
@@ -54,6 +58,7 @@
           target="_blank"
           rel="noopener noreferrer"
           :href="$static.metadata.paypal"
+          aria-label="paypal"
         >
           <font-awesome-icon
             :icon="['fab', 'paypal']"

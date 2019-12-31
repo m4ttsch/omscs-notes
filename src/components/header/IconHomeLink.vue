@@ -5,6 +5,7 @@
         src="~/assets/images/favicon.png"
         width="30"
         height="30"
+        alt="grad cap"
       />
     </g-link>
   </div>

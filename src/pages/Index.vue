@@ -21,7 +21,14 @@ export default {
   components: { Hero, Wave, Testimonials, ThankYou, Notebooks },
 
   metaInfo: {
-    title: 'Home'
+    title: 'Home',
+    meta: [
+      {
+        key: 'description',
+        name: 'description',
+        content: 'Clear, organized, and forever free OMSCS lecture notes'
+      }
+    ]
   },
 
   methods: {

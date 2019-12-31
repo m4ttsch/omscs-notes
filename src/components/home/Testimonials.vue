@@ -31,6 +31,7 @@
                     :src="`/assets/images/testimonials/${testimonial.image}`"
                     width="48"
                     height="48"
+                    :alt="`Portrait of ${testimonial.name}`"
                   >
                   <div class="ml-5 flex flex-col justify-center">
                     <p class="text-xl leading-none">
