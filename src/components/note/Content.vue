@@ -28,6 +28,18 @@ export default {
   @apply font-sans;
   @apply text-gray-700;
 
+  a {
+    @apply text-teal-600;
+  }
+
+  ul {
+    @apply list-disc;
+  }
+
+  details {
+    @apply my-10;
+  }
+
   h1, h2, h3, h4, h5, h6 {
     @apply border-none;
 
@@ -42,24 +54,6 @@ export default {
   h1 {
     .icon.icon-link {
       @apply hidden;
-    }
-  }
-
-  .icon.icon-link {
-    @apply inline-flex;
-    @apply items-end;
-    @apply mr-2;
-    @apply cursor-pointer;
-    @apply text-gray-300;
-
-    &:hover {
-      @apply text-gray-500;
-    }
-
-    &:before {
-      font-family: 'octicons-link';
-      content: '\f05c';
-      @apply text-lg;
     }
   }
 
@@ -81,16 +75,26 @@ export default {
     }
   }
 
-  a {
-    @apply text-teal-600;
+  .icon.icon-link {
+    @apply inline-flex;
+    @apply items-end;
+    @apply mr-2;
+    @apply cursor-pointer;
+    @apply text-gray-300;
+
+    &:hover {
+      @apply text-gray-500;
+    }
+
+    &:before {
+      font-family: 'octicons-link';
+      content: '\f05c';
+      @apply text-lg;
+    }
   }
 
-  ul {
-    @apply list-disc;
-  }
-
-  details {
-    @apply my-10;
+  .shiki {
+    overflow-x: auto; 
   }
 }
 </style>
