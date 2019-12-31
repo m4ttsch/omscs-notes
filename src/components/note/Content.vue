@@ -34,11 +34,14 @@ export default {
     a {
       &:hover {
         @apply cursor-default;
-
-        .icon.icon-link {
-          text-decoration: none;
-        }
+        @apply no-underline;
       }
+    }
+  }
+
+  h1 {
+    .icon.icon-link {
+      @apply hidden;
     }
   }
 
@@ -47,12 +50,16 @@ export default {
     @apply items-end;
     @apply mr-2;
     @apply cursor-pointer;
+    @apply text-gray-300;
+
+    &:hover {
+      @apply text-gray-500;
+    }
 
     &:before {
       font-family: 'octicons-link';
       content: '\f05c';
       @apply text-lg;
-      @apply text-teal-600;
     }
   }
 
