@@ -30,20 +30,46 @@ export default {
 
   h1, h2, h3, h4, h5, h6 {
     @apply border-none;
+
+    a {
+      &:hover {
+        @apply cursor-default;
+
+        .icon.icon-link {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .icon.icon-link {
+    @apply inline-flex;
+    @apply items-end;
+    @apply mr-2;
+    @apply cursor-pointer;
+
+    &:before {
+      font-family: 'octicons-link';
+      content: '\f05c';
+      @apply text-lg;
+      @apply text-teal-600;
+    }
   }
 
   h2, h3 {
-    a:before {
-      content: '';
-      display: block;
-      position: relative;
-      width: 0;
-      height: 7rem;
-      margin-top: -7rem;
+    a {
+      &:before {
+        content: '';
+        display: block;
+        position: relative;
+        width: 0;
+        height: 7rem;
+        margin-top: -7rem;
 
-      @screen lg {
-        height: 6rem;
-        margin-top: -6rem;
+        @screen lg {
+          height: 6rem;
+          margin-top: -6rem;
+        }
       }
     }
   }

@@ -13,7 +13,7 @@
         <div class="sticky-sidebar hidden lg:sticky lg:block overflow-y-auto max-w-xs">
           <slot name="sidebar:lg" />
         </div>
-        <div>
+        <div class="w-full lg:w-auto">
           <slot name="content" />
         </div>
       </div>

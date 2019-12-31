@@ -16,7 +16,8 @@ module.exports = {
         typeName: 'Note',
         remark: {
           plugins: [
-            [ 'gridsome-plugin-remark-shiki', { theme: 'nord', skipInline: true } ]
+            [ 'gridsome-plugin-remark-shiki', { theme: 'nord', skipInline: true } ],
+            'remark-autolink-headings'
           ]
         }
       }
