@@ -10,7 +10,7 @@
         <slot name="sidebar:sm" />
       </div>
       <div class="flex justify-center">
-        <div class="sticky-sidebar hidden lg:sticky lg:block overflow-y-auto">
+        <div class="sticky-sidebar hidden lg:sticky lg:block overflow-y-auto max-w-xs">
           <slot name="sidebar:lg" />
         </div>
         <div>

@@ -19,9 +19,6 @@ export default {
       type: Object,
       required: true
     }
-  },
-  mounted() {
-    console.log("mounted")
   }
 }
 </script>
@@ -33,6 +30,17 @@ export default {
 
   h1, h2, h3, h4, h5, h6 {
     @apply border-none;
+  }
+
+  // This is ugly and hacky, but it will have to do for now
+  h2, h3 {
+    padding-top: 110px;
+    margin-top: -110px;
+
+    @screen lg {
+      padding-top: 90px;
+      margin-top: -90px;
+    }
   }
 
   a {

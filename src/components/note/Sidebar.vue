@@ -1,45 +1,24 @@
 <template lang="html">
   <div class="Sidebar">
     <div class="w-full p-5 md:mr-10 text-gray-600 h-full">
-      <div
+      <SidebarGroup
         v-for="({ section, notes }) in sidebarSections"
         :key="section"
-      >
-        <div class="mb-5">
-          <p class="text-indigo-800 text-xl mb-3">
-            {{ section }}
-          </p>
-          <div
-            v-for="({ node: { lecture, title, path }}) in notes"
-            :key="lecture"
-          >
-            <div class="mb-1">
-              <p
-                v-if="title === current.title"
-                class="text-gray-700 font-bold"
-              >
-                {{ title }}
-              </p>
-              <g-link
-                v-else
-                :to="path"
-                @click.native="$emit('click')"
-              >
-                {{ title }}
-              </g-link>
-            </div>
-          </div>
-        </div>
-      </div>
+        :section="section"
+        :notes="notes"
+        :current="current"
+      />
     </div>
   </div>
 </template>
 
 <script>
 import sidebars from '~/../data/sidebars.json'
+import SidebarGroup from './Sidebar/SidebarGroup'
 
 export default {
   name: 'Sidebar',
+  components: { SidebarGroup },
   props: {
     current: {
       type: Object,

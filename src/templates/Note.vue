@@ -11,14 +11,13 @@
     </template>
     <template #sidebar:sm>
       <div
-        v-if="navExpanded"
+        v-show="navExpanded"
         class="fixed z-10 h-full w-full bg-white"
       >
-        <div class="relative h-full overflow-y-auto pb-20">
+        <div class="relative h-full overflow-y-auto pb-20 pl-10">
           <Sidebar
             :current="$page.currentNote"
             :others="$page.otherNotesInCourse.edges"
-            @click="navExpanded = false"
           />
         </div>
       </div>
@@ -30,12 +29,10 @@
       />
     </template>
     <template #content>
-      <div :class="{'fixed': navExpanded}">
-        <Content
-          ref="content"
-          :note="$page.currentNote"
-        />
-      </div>
+      <Content
+        ref="content"
+        :note="$page.currentNote"
+      />
     </template>
   </NoteLayout>
 </template>
@@ -44,6 +41,7 @@
   query Note($id: ID!, $course: String!) {
     currentNote: note(id: $id) {
       course
+      lecture
       title
       path
       timeToRead
@@ -81,16 +79,12 @@ export default {
   },
 
   watch: {
-    navExpanded() {
-      const content = this.$refs.content.$el
+    $route() {
+      this.navExpanded = false
+    },
 
-      if (this.navExpanded) {
-        this.notePosition = content.getBoundingClientRect().top
-      } else {
-        this.$nextTick(() => window.scrollTo({
-          top: -this.notePosition + content.parentElement.getBoundingClientRect().top
-        }))
-      }
+    navExpanded() {
+      document.body.classList.toggle('overflow-hidden')
     }
   },
 
