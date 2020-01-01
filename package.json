@@ -4,8 +4,7 @@
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
-    "explore": "gridsome explore",
-    "generate-icons": "vsvg -s ./src/assets/icons -t ./src/compiled-icons"
+    "explore": "gridsome explore"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
