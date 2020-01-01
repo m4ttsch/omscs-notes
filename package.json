@@ -16,7 +16,6 @@
     "@gridsome/plugin-google-analytics": "^0.1.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.4.0",
-    "autotrack": "^2.4.1",
     "github-markdown-css": "^3.0.1",
     "gridsome": "^0.7.0",
     "gridsome-plugin-remark-shiki": "^0.3.1",

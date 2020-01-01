@@ -10,19 +10,6 @@ library.add(fas)
 library.add(fab)
 library.add(far)
 
-if (process.isServer) {
-  const window = window || {}
-}
-
-
-if (process.isClient) {
-  require('autotrack/lib/plugins/outbound-link-tracker')
-  require('autotrack/lib/plugins/max-scroll-tracker')
-  
-  ga('require', 'outboundLinkTracker')
-  ga('require', 'maxScrollTracker')
-}
-
 require('github-markdown-css/github-markdown.css')
 require('typeface-lato')
 
