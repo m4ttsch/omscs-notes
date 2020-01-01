@@ -65,12 +65,13 @@
 </page-query>
 <script>
 
+import NoteLayout from '~/layouts/Note'
 import Content from '~/components/note/Content'
 import Sidebar from '~/components/note/Sidebar'
 
 export default {
   name: 'Note',
-  components: { Content, Sidebar },
+  components: { Content, Sidebar, NoteLayout },
 
   data() {
     return {

@@ -12,6 +12,8 @@
 </template>
 
 <script>
+require('github-markdown-css/github-markdown.css')
+
 export default {
   name: 'Content',
   props: {
@@ -94,7 +96,7 @@ export default {
   }
 
   .shiki {
-    overflow-x: auto; 
+    overflow-x: auto;
   }
 }
 </style>

@@ -30,7 +30,7 @@
                 :href="$static.metadata.amazon"
               >Amazon</a>
               referral link
-              <v-popover
+              <VPopover
                 placement="top-start"
                 container="#thank-you"
                 class="inline-block"
@@ -55,7 +55,7 @@
                     Read more
                   </a>
                 </div>
-              </v-popover>
+              </VPopover>
             </li>
             <li class="mb-2">
               giving me a star on
@@ -98,8 +98,11 @@
 </static-query>
 
 <script>
+import { VPopover } from 'v-tooltip'
+
 export default {
-  name: 'ThankYou'
+  name: 'ThankYou',
+  components: { VPopover }
 }
 </script>
 
