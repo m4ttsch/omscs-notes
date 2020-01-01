@@ -7,6 +7,7 @@
           rel="noopener noreferrer"
           :href="$static.metadata.github"
           aria-label="github"
+          @click="$analytics.logEvent('nav_click', {target: 'github'})"
         >
           <font-awesome-icon
             :icon="['fab', 'github']"
@@ -20,6 +21,7 @@
           rel="noopener noreferrer"
           :href="$static.metadata.linkedin"
           aria-label="linkedin"
+          @click="$analytics.logEvent('nav_click', {target: 'linkedin'})"
         >
           <font-awesome-icon
             :icon="['fab', 'linkedin-in']"
@@ -33,6 +35,7 @@
           rel="noopener noreferrer"
           :href="`mailto:${$static.metadata.email}`"
           aria-label="email"
+          @click="$analytics.logEvent('nav_click', {target: 'email'})"
         >
           <font-awesome-icon
             :icon="['far', 'envelope']"
@@ -46,6 +49,7 @@
           rel="noopener noreferrer"
           :href="$static.metadata.amazon"
           aria-label="amazon"
+          @click="$analytics.logEvent('nav_click', {target: 'amazon'})"
         >
           <font-awesome-icon
             :icon="['fab', 'amazon']"
@@ -59,6 +63,7 @@
           rel="noopener noreferrer"
           :href="$static.metadata.paypal"
           aria-label="paypal"
+          @click="$analytics.logEvent('nav_click', {target: 'paypal'})"
         >
           <font-awesome-icon
             :icon="['fab', 'paypal']"

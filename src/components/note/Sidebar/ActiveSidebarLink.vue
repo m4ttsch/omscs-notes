@@ -33,6 +33,7 @@
           :href="anchor"
           class="block text-gray-600 text-sm"
           :style="{paddingLeft: `${(depth - 1) * 16}px`}"
+          @click="$analytics.logEvent('sidebar_click', {target: anchor})"
         >{{ value }}</a>
       </li>
     </ul>
