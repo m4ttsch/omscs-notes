@@ -12,6 +12,11 @@ library.add(fas)
 library.add(fab)
 library.add(far)
 
+if (process.isClient) {
+  require('autotrack/lib/plugins/event-tracker')
+  ga('require', 'eventTracker')
+}
+
 export default function (Vue, { router, head, isClient }) {
   Vue.component('font-awesome-icon', FontAwesomeIcon)
   Vue.component('Layout', DefaultLayout)

@@ -3,6 +3,9 @@
     <g-link
       to="/operating-systems/welcome"
       class="nav-link"
+      ga-on="click"
+      ga-event-category="Nav Click"
+      ga-event-action="Home"
       @click.native="$emit('click')"
     >
       GIOS
