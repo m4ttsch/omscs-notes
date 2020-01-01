@@ -33,6 +33,12 @@ module.exports = {
         shouldTimeTravel: true,
         shouldPurgeUnusedKeyframes: true,
       }
+    },
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-132810678-1'
+      }
     }
   ]
 }
