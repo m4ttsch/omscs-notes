@@ -19,7 +19,7 @@
               <a
                 class="border-b-4 border-teal-200"
                 :href="$static.metadata.paypal"
-                @click="$analytics.logEvent('thank_you_click', {target: 'paypal'})"
+                @click="logEvent('thank_you_click', {target: 'paypal'})"
               >
                 PayPal
               </a>
@@ -29,7 +29,7 @@
               <a
                 class="border-b-4 border-teal-200"
                 :href="$static.metadata.amazon"
-                @click="$analytics.logEvent('thank_you_click', {target: 'amazon'})"
+                @click="logEvent('thank_you_click', {target: 'amazon'})"
               >Amazon</a>
               referral link
               <VPopover
@@ -64,7 +64,7 @@
               <a
                 class="border-b-4 border-teal-200"
                 :href="$static.metadata.github"
-                @click="$analytics.logEvent('thank_you_click', {target: 'github'})"
+                @click="logEvent('thank_you_click', {target: 'github'})"
               >
                 GitHub
               </a>
@@ -101,11 +101,13 @@
 </static-query>
 
 <script>
+import Analytics from '~/mixins/analytics'
 import { VPopover } from 'v-tooltip'
 
 export default {
   name: 'ThankYou',
-  components: { VPopover }
+  components: { VPopover },
+  mixins: [Analytics]
 }
 </script>
 

@@ -42,11 +42,13 @@
 </template>
 
 <script>
+import Analytics from '~/mixins/analytics'
 export default {
   name: 'Hero',
+  mixins: [Analytics],
   methods: {
     scrollIntoView(target) {
-      this.$analytics.logEvent('hero_click', { target })
+      this.logEvent('hero_click', { target })
       this.$emit('scrollIntoView', target)
     }
   }
