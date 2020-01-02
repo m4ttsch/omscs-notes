@@ -13,10 +13,12 @@
         <p>
           Copyright &copy; 2019-{{ new Date().getFullYear() }}. All rights reserved.
         </p>
-        <a
-          href="#"
+        <g-link
+          to="/privacy"
           class="block text-gray-500"
-        >privacy policy</a>
+        >
+          privacy policy
+        </g-link>
       </div>
     </div>
   </div>
@@ -26,6 +28,3 @@
 export default {
 }
 </script>
-
-<style lang="css" scoped>
-</style>
