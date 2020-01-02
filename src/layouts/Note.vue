@@ -4,6 +4,10 @@
       <div class="block lg:hidden">
         <slot name="expand-toggle" />
       </div>
+      <div
+        class="h-1 bg-teal-600"
+        :style="{'width': `${scrollPercentage}%`}"
+      />
     </template>
     <div class="h-full">
       <div class="lg:hidden w-full">
@@ -24,6 +28,17 @@
 <script>
 export default {
   name: 'NoteLayout',
+  data() {
+    return {
+      scrollPercentage: 0
+    }
+  },
+
+  mounted() {
+    this.$root.$on('scroll', ratio =>
+      this.scrollPercentage = ratio * 100
+    )
+  }
 }
 </script>
 
