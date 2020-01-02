@@ -2,9 +2,9 @@
   "name": "omscs-notes",
   "private": true,
   "scripts": {
-    "build": "gridsome build",
+    "build": "GRIDSOME_ENV=production gridsome build",
     "develop": "GRIDSOME_ENV=development gridsome develop",
-    "explore": "GRIDSOME_ENV=production gridsome explore"
+    "explore": "gridsome explore"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
