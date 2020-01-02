@@ -5,8 +5,15 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  icon: './src/assets/images/favicon.png',
   siteName: 'OMSCS Notes',
+  icon: './src/assets/images/favicon.png',
+  metadata: {
+    github: 'https://github.com/m4ttsch/omscs-notes',
+    linkedin: 'https://www.linkedin.com/in/matt-schlenker-3457b047',
+    email: 'omscs-notes@gatech.edu',
+    amazon: 'https://amzn.to/2Pai0bO',
+    paypal: 'https://www.paypal.me/MatthewSchlenker'
+  },
   plugins: [
     {
       use: '@gridsome/source-filesystem',
