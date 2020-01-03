@@ -161,7 +161,13 @@ export default {
     overflow-x: auto;
   }
 
-  &.textbook-information {
+  &.download-pdf {
+    img {
+      @apply w-3/4;
+    }
+  }
+
+  &.textbook-information, &.download-pdf {
     a {
       img {
         @apply shadow-xl;
