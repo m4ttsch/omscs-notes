@@ -16,22 +16,21 @@
       >
         <div class="relative h-full overflow-y-auto pb-20 pl-10">
           <Sidebar
-            :current="$page.currentNote"
-            :others="$page.otherNotesInCourse.edges"
+            :current="note"
+            :others="notes"
           />
         </div>
       </div>
     </template>
     <template #sidebar:lg>
       <Sidebar
-        :current="$page.currentNote"
-        :others="$page.otherNotesInCourse.edges"
+        :current="note"
+        :others="notes"
       />
     </template>
     <template #content>
       <Content
-        ref="content"
-        :note="$page.currentNote"
+        :note="note"
       />
     </template>
   </NoteLayout>
@@ -39,7 +38,7 @@
 
 <page-query>
   query Note($id: ID!, $course: String!) {
-    currentNote: note(id: $id) {
+    note: note(id: $id) {
       course
       lecture
       title
@@ -52,7 +51,7 @@
         anchor
       }
     }
-    otherNotesInCourse: allNote(filter: { course: { eq: $course } }) {
+    notes: allNote(filter: { course: { eq: $course } }) {
       edges {
         node {
           lecture
@@ -79,6 +78,16 @@ export default {
     }
   },
 
+  computed: {
+    notes() {
+      return this.$page.notes.edges.map(({ node }) => node)
+    },
+
+    note() {
+      return this.$page.note
+    }
+  },
+
   watch: {
     $route() {
       this.navExpanded = false
@@ -91,9 +100,9 @@ export default {
 
   metaInfo() {
     return {
-      title: this.$page.currentNote.title,
+      title: this.note.title,
       meta: [
-        { key: 'description', name: 'description', content: this.$page.currentNote.title }
+        { key: 'description', name: 'description', content: this.note.title }
       ]
     }
   }

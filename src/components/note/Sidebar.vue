@@ -35,7 +35,7 @@ export default {
     sidebarSections() {
       return sidebars[this.current.course].map(({ section, notes }) => {
         notes = notes.map(note => {
-          return this.others.find(({ node: { lecture } }) => note === lecture)
+          return this.others.find(({ lecture }) => note === lecture)
         })
 
         return { section, notes }

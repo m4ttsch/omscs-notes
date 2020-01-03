@@ -6,7 +6,7 @@
       </p>
       <ul>
         <li
-          v-for="({ node: note }, i) in notes"
+          v-for="(note, i) in notes"
           :key="i"
         >
           <div class="mb-1 flex">
