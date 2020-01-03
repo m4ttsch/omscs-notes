@@ -111,5 +111,17 @@
         "midterm-2-study-guide"
       ]
     }
+  ],
+  "machine-learning-trading": [
+    {
+      "section": "Start Here",
+      "notes": [
+        "welcome"
+      ]
+    },
+    {
+      "section": "Lecture Notes",
+      "notes": []
+    }
   ]
 }

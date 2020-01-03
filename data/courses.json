@@ -1,6 +1,7 @@
 {
   "courses": [{
     "name": "Machine Learning for Trading",
+    "abbrev": "ML4T",
     "code": "CS7646",
     "semester": "Spring 2020",
     "author": "Matt Schlenker",
@@ -9,6 +10,7 @@
     "completed": false
   }, {
     "name": "Introduction to Information Security",
+    "abbrev": "IIS",
     "code": "CS6035",
     "semester": "Fall 2019",
     "author": "Matt Schlenker",
@@ -18,6 +20,7 @@
     "completed": true
   }, {
     "name": "Computer Networking",
+    "abbrev": "CN",
     "code": "CS6250",
     "semester": "Spring 2019",
     "author": "Matt Schlenker",
@@ -27,6 +30,7 @@
     "completed": true
   },{
     "name": "Graduate Introduction to Operating Systems",
+    "abbrev": "GIOS",
     "code": "CS6200",
     "semester": "Fall 2018",
     "author": "Matt Schlenker",
