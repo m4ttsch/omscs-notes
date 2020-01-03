@@ -8,7 +8,8 @@ module.exports = {
   siteName: 'OMSCS Notes',
   icon: './src/assets/images/favicon.png',
   metadata: {
-    github: 'https://github.com/m4ttsch/omscs-notes',
+    mainGithub: 'https://github.com/m4ttsch/omscs-notes',
+    notesGithub: 'https://github.com/m4ttsch/omscs-notes-notes',
     linkedin: 'https://www.linkedin.com/in/matt-schlenker-3457b047',
     email: 'omscs-notes@gatech.edu',
     amazon: 'https://amzn.to/2Pai0bO',

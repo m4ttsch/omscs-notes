@@ -18,12 +18,34 @@
         </div>
         <div
           class="markdown-body"
+          :class="note.lecture"
           v-html="note.content"
         />
+      </div>
+      <div class="text-xs text-teal-600 hover:text-teal-800 p-3">
+        <a
+          :href="`${$static.metadata.notesGithub}/edit/master/${note.course}/${note.lecture}.md`"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <font-awesome-icon
+            :icon="['far', 'edit']"
+            size="md"
+          />
+          this page in github
+        </a>
       </div>
     </div>
   </div>
 </template>
+
+<static-query>
+  query {
+    metadata {
+      notesGithub
+    }
+  }
+</static-query>
 
 <script>
 require('github-markdown-css/github-markdown.css')
@@ -137,6 +159,19 @@ export default {
 
   .shiki {
     overflow-x: auto;
+  }
+
+  &.textbook-information {
+    a {
+      img {
+        @apply shadow-xl;
+        @apply m-auto;
+
+        &:hover {
+          @apply shadow;
+        }
+      }
+    }
   }
 }
 </style>

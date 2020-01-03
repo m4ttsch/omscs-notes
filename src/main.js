@@ -28,6 +28,11 @@ export default function (Vue, { head }) {
       src: 'https://omscs-notes.com/__/firebase/init.js',
       body: true
     })
+
+    head.script.push({
+      src: "https://gumroad.com/js/gumroad-embed.js",
+      body: true
+    })
   }
 
   Vue.component('font-awesome-icon', FontAwesomeIcon)

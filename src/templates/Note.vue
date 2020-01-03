@@ -99,21 +99,11 @@ export default {
   },
 
   metaInfo() {
-    let script = {}
-
-    if(this.$route.path.includes('download-pdf')) {
-      script = {
-        src: "https://gumroad.com/js/gumroad-embed.js",
-        body: true
-      }
-    }
-
     return {
       title: this.note.title,
       meta: [
         { key: 'description', name: 'description', content: this.note.title }
-      ],
-      script: [script]
+      ]
     }
   }
 }

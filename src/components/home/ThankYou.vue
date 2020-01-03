@@ -63,7 +63,7 @@
               giving me a star on
               <a
                 class="border-b-4 border-teal-200"
-                :href="$static.metadata.github"
+                :href="$static.metadata.mainGithub"
                 @click="logEvent('thank_you_click', {target: 'github'})"
               >
                 GitHub
@@ -94,7 +94,7 @@
     metadata {
       paypal
       amazon
-      github
+      mainGithub
       email
     }
   }

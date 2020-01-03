@@ -5,7 +5,7 @@
         <a
           target="_blank"
           rel="noopener noreferrer"
-          :href="$static.metadata.github"
+          :href="$static.metadata.mainGithub"
           aria-label="github"
           @click="logEvent('nav_click', {target: 'github'})"
         >
@@ -78,7 +78,7 @@
 <static-query>
   query {
     metadata {
-      github
+      mainGithub
       linkedin
       email
       paypal
