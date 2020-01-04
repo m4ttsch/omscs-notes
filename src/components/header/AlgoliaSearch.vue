@@ -31,7 +31,6 @@ export default {
       apiKey: '9d9ff52895877e8baeac290c95e89704',
       indexName: 'omscs-notes',
       inputSelector: '#algolia-search',
-      debug: true,
       handleSelected: (input, _, suggestion) => {
         this.handleSearch(input, suggestion)
       }
