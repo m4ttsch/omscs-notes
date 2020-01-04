@@ -2,14 +2,19 @@
   <div class="Content">
     <div class="p-2 pb-4 lg:p-12">
       <div class="w-full max-w-2xl px-8 lg:px-16 py-5 lg:py-10 rounded shadow m-auto bg-white">
-        <div class="py-5">
+        <div
+          class="py-5 note-header"
+        >
           <div class="mb-1">
-            <p class="text-gray-500 leading-none text-sm mb-1">
+            <h1
+              class="text-gray-500 leading-none text-sm mb-1"
+              data-level="0"
+            >
               {{ note.course | pretty }}
-            </p>
-            <h1 class="text-4xl leading-none mb-8">
-              {{ note.title }}
             </h1>
+            <h2 class="text-4xl leading-none mb-8">
+              {{ note.title }}
+            </h2>
             <p class="text-indigo-800 uppercase text-sm">
               {{ note.timeToRead }} minute read
             </p>
