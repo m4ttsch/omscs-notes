@@ -20,7 +20,6 @@
 </template>
 
 <script>
-import docsearch from 'docsearch.js'
 import Analytics from '~/mixins/analytics'
 
 export default {
@@ -47,8 +46,6 @@ export default {
 </script>
 
 <style lang="scss">
-  @import 'docsearch.js/dist/npm/styles/main.scss';
-
   .algolia-autocomplete {
     width: 100%;
   }

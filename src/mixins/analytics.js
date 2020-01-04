@@ -4,7 +4,7 @@ export default {
       if(process.env.GRIDSOME_ENV === 'production') {
         firebase.analytics().logEvent(eventName, eventOptions)
       } else {
-        console.log('Event triggered', eventName, eventOptions)
+        console.info('Event triggered', eventName, eventOptions)
       }
     }
   }

@@ -14,7 +14,6 @@
     "@fortawesome/vue-fontawesome": "^0.1.8",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.4.0",
-    "docsearch.js": "^2.6.3",
     "github-markdown-css": "^3.0.1",
     "gridsome": "^0.7.0",
     "gridsome-plugin-remark-shiki": "^0.3.1",

@@ -30,11 +30,6 @@ export default function (Vue, { head }) {
     })
   }
 
-  head.script.push({
-    src: "https://gumroad.com/js/gumroad.js",
-    body: true
-  })
-
   Vue.component('font-awesome-icon', FontAwesomeIcon)
   Vue.component('Layout', DefaultLayout)
 }
