@@ -1,6 +1,7 @@
 <template lang="html">
-  <div v-if="!hideForever">
+  <div class="PDFDiscount">
     <notifications
+      v-if="!hideForever"
       group="pdf-discount"
       :duration="-1"
       :speed="1000"
@@ -68,15 +69,15 @@ export default {
   name: 'PDFDiscount',
   mixins: [Analytics],
 
-  data() {
+  data: function() {
     return {
-      hideForever: localStorage.getItem('pdf-discount-hide-forever') || false
-    }
-  },
+        hideForever: false
+      }
+    },
 
-  watch: {
-    hideForever(val) {
-       localStorage.setItem('pdf-discount-hide-forever', val)
+  mounted() {
+    if(localStorage.getItem('pdf-discount-hide-forever')) {
+      this.hideForever = true
     }
   },
 
@@ -88,6 +89,7 @@ export default {
 
     logAndCloseForever() {
       this.logEvent('discount-click', { target: 'close-forever' })
+      localStorage.setItem('pdf-discount-hide-forever', true)
       this.hideForever = true
     }
   }
