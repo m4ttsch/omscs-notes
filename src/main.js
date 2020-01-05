@@ -1,6 +1,7 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 import DefaultLayout from '~/layouts/Default.vue'
+import Notifications from 'vue-notification'
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -30,6 +31,7 @@ export default function (Vue, { head }) {
     })
   }
 
+  Vue.use(Notifications)
   Vue.component('font-awesome-icon', FontAwesomeIcon)
   Vue.component('Layout', DefaultLayout)
 }

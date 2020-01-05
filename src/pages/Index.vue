@@ -31,6 +31,10 @@ export default {
     ]
   },
 
+  mounted() {
+    this.$notify({ group: 'pdf-discount', position: 'top right' })
+  },
+
   methods: {
     _scrollIntoView(target) {
       window.scrollTo({

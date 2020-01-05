@@ -7,17 +7,19 @@
       <slot />
     </div>
     <Footer />
+    <PDFDiscount />
   </div>
 </template>
 
 <script>
 require('typeface-lato')
 
-import Header from '~/components/Header';
-import Footer from '~/components/Footer';
+import Header from '~/components/Header'
+import Footer from '~/components/Footer'
+import PDFDiscount from '~/components/notification/PDFDiscount'
 
 export default {
   name: 'Layout',
-  components: { Header, Footer }
+  components: { Header, Footer, PDFDiscount }
 }
 </script>
