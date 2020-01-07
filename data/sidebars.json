@@ -122,7 +122,15 @@
     },
     {
       "section": "Lecture Notes",
-      "notes": []
+      "notes": [
+        "reading-plotting-stock-data"
+      ]
+    },
+    {
+      "section": "Exam Review",
+      "notes": [
+        "udacity-quizzes"
+      ]
     }
   ]
 }
