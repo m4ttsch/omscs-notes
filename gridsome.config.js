@@ -36,10 +36,23 @@ module.exports = {
         tailwindConfig: './tailwind.config.js',
         purgeConfig: {},
         presetEnvConfig: {},
-        shouldPurge: true,
+        shouldPurge: false,
         shouldImport: true,
         shouldTimeTravel: true,
         shouldPurgeUnusedKeyframes: true,
+      }
+    },
+    {
+      use: 'gridsome-plugin-purgecss',
+      options: {
+        content: [
+          './src/**/*.vue',
+          './src/**/*.js',
+          './src/**/*.jsx',
+          './src/**/*.pug',
+          './src/**/*.md'
+        ],
+        defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || [],
       }
     }
   ]

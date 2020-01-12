@@ -53,8 +53,6 @@
 </static-query>
 
 <script>
-require('github-markdown-css/github-markdown.css')
-
 export default {
   name: 'Content',
 
@@ -89,6 +87,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import 'github-markdown-css/github-markdown.css';
+
 .markdown-body {
   @apply font-sans;
   @apply text-gray-700;
