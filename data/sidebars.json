@@ -124,7 +124,8 @@
       "section": "Lecture Notes",
       "notes": [
         "reading-plotting-stock-data",
-        "working-with-multiple-stocks"
+        "working-with-multiple-stocks",
+        "power-of-numpy"
       ]
     },
     {
