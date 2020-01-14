@@ -126,7 +126,8 @@
         "reading-plotting-stock-data",
         "working-with-multiple-stocks",
         "power-of-numpy",
-        "statistical-analysis-time-series"
+        "statistical-analysis-time-series",
+        "incomplete-data"
       ]
     },
     {
