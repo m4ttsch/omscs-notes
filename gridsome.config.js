@@ -54,6 +54,12 @@ module.exports = {
         ],
         defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || [],
       }
+    },
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-132810678-1'
+      }
     }
   ]
 }
