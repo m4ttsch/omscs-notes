@@ -128,7 +128,8 @@
         "power-of-numpy",
         "statistical-analysis-time-series",
         "incomplete-data",
-        "histograms-scatter-plots"
+        "histograms-scatter-plots",
+        "sharpe-ratio-other-portfolio-statistics"
       ]
     },
     {
