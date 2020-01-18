@@ -20,6 +20,8 @@
     "gridsome-plugin-purgecss": "^1.0.12",
     "gridsome-plugin-remark-shiki": "^0.3.1",
     "remark-autolink-headings": "^5.2.1",
+    "remark-html-katex": "^2.0.0",
+    "remark-math": "^2.0.0",
     "typeface-lato": "^0.0.75",
     "v-tooltip": "^2.0.2",
     "vue-carousel": "^0.18.0",
