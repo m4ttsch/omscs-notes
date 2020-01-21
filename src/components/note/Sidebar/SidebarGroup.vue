@@ -14,13 +14,13 @@
               v-if="note.lecture === current.lecture"
               :note="current"
             />
-            <g-link
+            <a
               v-else
-              :to="note.path"
+              :href="note.path"
               class="text-gray-700 leading-tight"
             >
               {{ note.title }}
-            </g-link>
+            </a>
           </div>
         </li>
       </ul>
