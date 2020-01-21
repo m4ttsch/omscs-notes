@@ -25,7 +25,9 @@ module.exports = {
         remark: {
           plugins: [
             [ 'gridsome-plugin-remark-shiki', { theme: 'nord', skipInline: true } ],
-            'remark-autolink-headings'
+            'remark-autolink-headings',
+            'remark-math',
+            'remark-html-katex'
           ]
         }
       }

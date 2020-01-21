@@ -17,7 +17,7 @@
             <g-link
               v-else
               :to="note.path"
-              class="text-gray-700"
+              class="text-gray-700 leading-tight"
             >
               {{ note.title }}
             </g-link>

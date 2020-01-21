@@ -5,19 +5,21 @@
       @click.prevent="expanded = !expanded"
     >
       <div class="flex text-gray-700">
-        <div class="mr-1 flex items-center">
+        <div class="mr-1">
           <font-awesome-icon
             v-if="expanded"
             :icon="['fas', 'minus']"
             size="xs"
+            class="mb-1"
           />
           <font-awesome-icon
             v-else
             :icon="['fas', 'plus']"
             size="xs"
+            class="mb-1"
           />
         </div>
-        <p class="font-bold">
+        <p class="font-bold leading-tight">
           {{ note.title }}
         </p>
       </div>

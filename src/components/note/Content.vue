@@ -1,23 +1,27 @@
 <template lang="html">
   <div class="Content">
     <div class="p-2 pb-4 lg:p-12">
-      <div class="w-full max-w-2xl px-8 lg:px-16 py-5 lg:py-10 rounded shadow m-auto bg-white">
+      <div class="w-full max-w-2xl px-8 lg:px-16 py-5 rounded shadow m-auto bg-white">
         <div
-          class="py-5 note-header"
+          class="mt-5 mb-2"
         >
-          <div class="mb-1">
+          <div class="mb-8">
             <h1
               class="text-gray-500 leading-none text-sm mb-1"
               data-level="0"
             >
               {{ note.course | pretty }}
             </h1>
-            <h2 class="text-4xl leading-none mb-8">
+            <h2 class="text-4xl leading-none mb-1">
               {{ note.title }}
             </h2>
             <p class="text-indigo-800 uppercase text-sm">
               {{ note.timeToRead }} minute read
             </p>
+          </div>
+          <hr class="w-full border-gray-300">
+          <div class="h-24 my-1 flex items-center">
+            <Ad />
           </div>
           <hr class="w-full border-gray-300">
         </div>
@@ -53,8 +57,10 @@
 </static-query>
 
 <script>
+import Ad from '~/components/Ad'
 export default {
   name: 'Content',
+  components: { Ad },
 
   filters: {
     pretty(course) {
