@@ -5,13 +5,26 @@
 <script>
 export default {
   name: 'Ad',
-  mounted() {
-    let carbonScript = document.createElement('script')
-    
-    carbonScript.id = '_carbonads_js'
-    carbonScript.setAttribute('src', '//cdn.carbonads.com/carbon.js?serve=CE7DE23Y&placement=wwwomscs-notescom')
+  watch: {
+    $route() {
+      this.$el.innerHTML = ""
+      this.createAdScript()
+    }
+  },
 
-    this.$el.appendChild(carbonScript)
+  mounted() {
+    this.createAdScript() 
+  },
+
+  methods: {
+    createAdScript() {
+      let carbonScript = document.createElement('script')
+    
+      carbonScript.id = '_carbonads_js'
+      carbonScript.setAttribute('src', '//cdn.carbonads.com/carbon.js?serve=CE7DE23Y&placement=wwwomscs-notescom')
+
+      this.$el.appendChild(carbonScript)
+    }
   }
 }
 </script>
