@@ -130,7 +130,8 @@
         "incomplete-data",
         "histograms-scatter-plots",
         "sharpe-ratio-other-portfolio-statistics",
-        "optimizers-building-parameterized-model"
+        "optimizers-building-parameterized-model",
+        "optimizers-how-to-optimize-portfolio"
       ]
     },
     {
