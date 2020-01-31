@@ -37,10 +37,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <font-awesome-icon
-            :icon="['far', 'edit']"
-            size="md"
-          />
+          <font-awesome-icon :icon="['far', 'edit']" />
           this page in github
         </a>
       </div>
