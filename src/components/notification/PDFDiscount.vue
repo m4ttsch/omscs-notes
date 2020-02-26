@@ -31,7 +31,7 @@
           <div class="px-3 py-2">
             <strong class="font-bold">This week only!</strong>
             <p class="block">
-              Take 10% all PDF content with discount code <b>spring2020</b>.
+              Take 10% off all PDF content with discount code <b>spring2020</b>.
             </p>
             <div class="flex justify-around my-4 text-teal-600">
               <a
