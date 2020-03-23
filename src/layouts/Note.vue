@@ -35,6 +35,7 @@ export default {
   },
 
   mounted() {
+    this.$notify({ group: 'pdf-discount', position: 'top center' })
     this.$root.$on('scroll', ratio =>
       this.scrollPercentage = ratio * 100
     )

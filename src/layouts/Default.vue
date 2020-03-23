@@ -7,7 +7,7 @@
       <slot />
     </div>
     <Footer />
-    <PDFDiscount />
+    <CoronaMessage />
   </div>
 </template>
 
@@ -16,10 +16,10 @@ require('typeface-lato')
 
 import Header from '~/components/Header'
 import Footer from '~/components/Footer'
-import PDFDiscount from '~/components/notification/PDFDiscount'
+import CoronaMessage from '~/components/notification/CoronaMessage'
 
 export default {
   name: 'Layout',
-  components: { Header, Footer, PDFDiscount }
+  components: { Header, Footer, CoronaMessage }
 }
 </script>
