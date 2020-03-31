@@ -146,7 +146,8 @@
         "efficient-markets-hypothesis",
         "fundamental-law-active-portfolio-management",
         "portfolio-optimization-efficient-frontier",
-        "reinforcement-learning"
+        "reinforcement-learning",
+        "q-learning"
       ]
     },
     {
