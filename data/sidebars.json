@@ -147,7 +147,8 @@
         "fundamental-law-active-portfolio-management",
         "portfolio-optimization-efficient-frontier",
         "reinforcement-learning",
-        "q-learning"
+        "q-learning",
+        "dyna"
       ]
     },
     {
