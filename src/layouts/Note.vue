@@ -45,7 +45,7 @@ export default {
 
 <style lang="scss" scoped>
   .sticky-sidebar {
-    top: 8rem;
+    top: 8.125rem;
     height: calc(100vh - 200px);
   }
 </style>

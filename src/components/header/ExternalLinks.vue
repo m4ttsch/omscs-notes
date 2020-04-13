@@ -57,8 +57,9 @@
           />
         </a>
       </div>
-      <div class="icon-link">
+      <div class="text-blue-500">
         <a
+          class="hover:text-blue-700"
           target="_blank"
           rel="noopener noreferrer"
           :href="$static.metadata.paypal"
