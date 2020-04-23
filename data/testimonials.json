@@ -1,6 +1,12 @@
 {
   "testimonials": [
     {
+      "name": "Vasudha Madugula",
+      "image": "vasudhamadugula.jpg",
+      "semester": "Spring 2020",
+      "quote": "OMSCS Notes was a boon during my final revisions for the IIS exams! The lesson notes were crisp and the practice questions forced me to recheck my understanding of important concepts. Kudos to you Matt, for maintaining the page!"
+    },
+    {
       "name": "Alex Naymark",
       "image": "alexnaymark.jpg",
       "semester": "Spring 2020",
