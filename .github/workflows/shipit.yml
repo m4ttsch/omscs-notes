@@ -34,8 +34,6 @@ jobs:
         with:
           name: dist
           path: dist
-      - name: Display structure of downloaded files
-        run: ls -R
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@v1.3.0
         with:
