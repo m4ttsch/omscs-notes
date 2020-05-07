@@ -292,7 +292,7 @@
       <h1>Contact Us</h1>
       <p>If you have any questions about this Privacy Policy, You can contact us:</p>
       <ul>
-        <li>By email: <a href="malto:omscs-notes@gatech.edu">omscs-notes@gatech.edu</a></li>
+        <li>By email: <a href="mailto:matt@omscs-notes.com">mailto:matt@omscs-notes.com</a></li>
       </ul>
     </div>
   </Layout>
