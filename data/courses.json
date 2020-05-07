@@ -7,7 +7,8 @@
     "author": "Matt Schlenker",
     "icon": "cs7646.png",
     "start": "/machine-learning-trading/welcome",
-    "completed": false
+    "completed": true,
+    "grade": "A"
   }, {
     "name": "Introduction to Information Security",
     "abbrev": "IIS",
