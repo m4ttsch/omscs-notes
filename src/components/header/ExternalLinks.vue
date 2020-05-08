@@ -9,10 +9,7 @@
           aria-label="github"
           @click="logEvent('nav_click', {target: 'github'})"
         >
-          <font-awesome-icon
-            :icon="['fab', 'github']"
-            size="lg"
-          />
+          <i class="fab fa-github fa-lg" />
         </a>
       </div>
       <div class="icon-link">
@@ -23,10 +20,7 @@
           aria-label="linkedin"
           @click="logEvent('nav_click', {target: 'linkedin'})"
         >
-          <font-awesome-icon
-            :icon="['fab', 'linkedin-in']"
-            size="lg"
-          />
+          <i class="fab fa-linkedin-in fa-lg" />
         </a>
       </div>
       <div class="icon-link border-gray-300 border-r-2 pr-4">
@@ -37,10 +31,7 @@
           aria-label="email"
           @click="logEvent('nav_click', {target: 'email'})"
         >
-          <font-awesome-icon
-            :icon="['far', 'envelope']"
-            size="lg"
-          />
+          <i class="far fa-envelope fa-lg" />
         </a>
       </div>
       <div class="icon-link">
@@ -51,25 +42,18 @@
           aria-label="amazon"
           @click="logEvent('nav_click', {target: 'amazon'})"
         >
-          <font-awesome-icon
-            :icon="['fab', 'amazon']"
-            size="lg"
-          />
+          <i class="fab fa-amazon fa-lg" />
         </a>
       </div>
-      <div class="text-blue-500">
+      <div class="icon-link">
         <a
-          class="hover:text-blue-700"
           target="_blank"
           rel="noopener noreferrer"
           :href="$static.metadata.paypal"
           aria-label="paypal"
           @click="logEvent('nav_click', {target: 'paypal'})"
         >
-          <font-awesome-icon
-            :icon="['fab', 'paypal']"
-            size="lg"
-          />
+          <i class="fab fa-paypal fa-lg" />
         </a>
       </div>
     </div>

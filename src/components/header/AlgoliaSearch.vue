@@ -2,12 +2,7 @@
   <div class="AlgoliaSearch">
     <div class="w-full font-sans text-indigo-800 flex justify-end">
       <label class="relative w-full">
-        <font-awesome-icon
-          icon="search"
-          class="m-3 fill-current absolute inset-0 z-10"
-          width="18"
-          height="18"
-        />
+        <i class="fa fa-search fa-md m-3 fill-current absolute inset-0 z-10" />
         <input
           id="algolia-search"
           placeholder="Search..."

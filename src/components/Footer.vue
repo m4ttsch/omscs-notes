@@ -4,10 +4,7 @@
       <div class="text-xs">
         <p>
           OMSCS Notes is made with
-          <font-awesome-icon
-            class="text-red-600"
-            :icon="['fas', 'heart']"
-          />
+          <i class="fas fa-heart text-red-600" />
           in NYC by Matt Schlenker.
         </p>
         <p>

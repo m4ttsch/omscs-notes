@@ -6,10 +6,7 @@
     >
       <div class="w-100 max-w-5xl m-auto">
         <div class="text-indigo-800">
-          <font-awesome-icon
-            :icon="['fas', 'quote-left']"
-            size="3x"
-          />
+          <i class="fas fa-quote-left fa-3x" />
         </div>
         <div class="max-w-3xl m-auto mb-10">
           <ClientOnly>

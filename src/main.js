@@ -10,16 +10,6 @@ if (process.isServer) {
   Notifications = require('vue-notification').default
 }
 
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { fas } from '@fortawesome/free-solid-svg-icons'
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { far } from '@fortawesome/free-regular-svg-icons'
-
-library.add(fas)
-library.add(fab)
-library.add(far)
-
 export default function (Vue, { head }) {
   if (process.env.GRIDSOME_ENV === 'production') {
     head.script.push({
@@ -39,6 +29,5 @@ export default function (Vue, { head }) {
   }
 
   Vue.use(Notifications)
-  Vue.component('font-awesome-icon', FontAwesomeIcon)
   Vue.component('Layout', DefaultLayout)
 }

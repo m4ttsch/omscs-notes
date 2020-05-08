@@ -5,18 +5,14 @@
       @click.prevent="expanded = !expanded"
     >
       <div class="flex text-gray-700">
-        <div class="mr-1">
-          <font-awesome-icon
-            v-if="expanded"
-            :icon="['fas', 'minus']"
-            size="xs"
-            class="mb-1"
+        <div class="mr-1 flex items-center">
+          <i 
+            v-if="expanded" 
+            class="fas fa-minus fa-xs" 
           />
-          <font-awesome-icon
-            v-else
-            :icon="['fas', 'plus']"
-            size="xs"
-            class="mb-1"
+          <i 
+            v-else 
+            class="fas fa-plus fa-xs" 
           />
         </div>
         <p class="font-bold leading-tight">

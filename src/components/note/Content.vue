@@ -37,7 +37,7 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <font-awesome-icon :icon="['far', 'edit']" />
+          <i class="far fa-edit" />
           this page in github
         </a>
       </div>

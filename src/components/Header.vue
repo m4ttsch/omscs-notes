@@ -25,10 +25,7 @@
               href="#"
               @click.prevent="expanded = true"
             >
-              <font-awesome-icon
-                :icon="['fas', 'bars']"
-                size="lg"
-              />
+              <i class="fas fa-bars fa-lg" />
             </a>
           </div>
           <div
@@ -39,10 +36,7 @@
               href="#"
               @click.prevent="expanded = false"
             >
-              <font-awesome-icon
-                :icon="['fas', 'times']"
-                size="lg"
-              />
+              <i class="fas fa-times fa-lg" />
             </a>
           </div>
         </div>

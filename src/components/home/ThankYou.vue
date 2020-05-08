@@ -40,10 +40,7 @@
                 boundaries-element="body"
               >
                 <sup class="hover:text-gray-500 cursor-pointer">
-                  <font-awesome-icon
-                    :icon="['far', 'question-circle']"
-                    size="xs"
-                  />
+                  <i class="far fa-question-circle fa-xs" />
                 </sup>
                 <div
                   slot="popover"
