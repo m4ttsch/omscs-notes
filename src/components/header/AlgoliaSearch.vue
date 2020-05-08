@@ -22,9 +22,9 @@ export default {
       apiKey: '9d9ff52895877e8baeac290c95e89704',
       indexName: 'omscs-notes',
       inputSelector: '#algolia-search',
-      handleSelected (_, __, { url }) {
+      handleSelected(_, __, { url }) {
         window.open(url, '_self')
-      }
+      },
     })
   },
 }
