@@ -11,23 +11,6 @@ if (process.isServer) {
 }
 
 export default function (Vue, { head }) {
-  if (process.env.GRIDSOME_ENV === 'production') {
-    head.script.push({
-      src: 'https://omscs-notes.com/__/firebase/7.6.1/firebase-app.js',
-      body: true
-    })
-
-    head.script.push({
-      src: 'https://omscs-notes.com/__/firebase/7.6.1/firebase-analytics.js',
-      body: true
-    })
-
-    head.script.push({
-      src: 'https://omscs-notes.com/__/firebase/init.js',
-      body: true
-    })
-  }
-
   Vue.use(Notifications)
   Vue.component('Layout', DefaultLayout)
 }
