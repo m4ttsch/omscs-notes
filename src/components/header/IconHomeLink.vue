@@ -13,6 +13,6 @@
 
 <script>
 export default {
-  name: 'IconHomeLink'
+  name: 'IconHomeLink',
 }
 </script>

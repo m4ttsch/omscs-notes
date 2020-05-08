@@ -19,6 +19,6 @@ export default {
 
   data() {
     return { courses }
-  }
+  },
 }
 </script>

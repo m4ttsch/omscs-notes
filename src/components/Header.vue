@@ -16,26 +16,16 @@
         <div class="ml-8 text-gray-400 hidden md:block">
           <ExternalLinks />
         </div>
-        <div class="ml-4 sm:ml-8 block md:hidden text-indigo-800 cursor-pointer">
-          <div
-            v-if="!expanded"
-            class="w-5"
-          >
-            <a
-              href="#"
-              @click.prevent="expanded = true"
-            >
+        <div
+          class="ml-4 sm:ml-8 block md:hidden text-indigo-800 cursor-pointer"
+        >
+          <div v-if="!expanded" class="w-5">
+            <a href="#" @click.prevent="expanded = true">
               <i class="fas fa-bars fa-lg" />
             </a>
           </div>
-          <div
-            v-else
-            class="w-5"
-          >
-            <a
-              href="#"
-              @click.prevent="expanded = false"
-            >
+          <div v-else class="w-5">
+            <a href="#" @click.prevent="expanded = false">
               <i class="fas fa-times fa-lg" />
             </a>
           </div>
@@ -58,31 +48,31 @@
 </template>
 
 <script>
-  import IconHomeLink from './header/IconHomeLink'
-  import AlgoliaSearch from './header/AlgoliaSearch'
-  import PrimaryNavLinks from './header/PrimaryNavLinks'
-  import ExternalLinks from './header/ExternalLinks'
+import IconHomeLink from './header/IconHomeLink'
+import AlgoliaSearch from './header/AlgoliaSearch'
+import PrimaryNavLinks from './header/PrimaryNavLinks'
+import ExternalLinks from './header/ExternalLinks'
 
-  export default {
-    name: 'Header',
-    components: { AlgoliaSearch, IconHomeLink, PrimaryNavLinks, ExternalLinks },
+export default {
+  name: 'Header',
+  components: { AlgoliaSearch, IconHomeLink, PrimaryNavLinks, ExternalLinks },
 
-    data() {
-      return {
-        expanded: false
-      }
+  data() {
+    return {
+      expanded: false,
     }
-  }
+  },
+}
 </script>
 
 <style lang="scss" scoped>
-  header {
-    &::before {
-      content: "";
-      height: 4px;
-      width: 100%;
-      display: block;
-      background: linear-gradient(45deg, #B2F5EA, #3C366B);
-    }
+header {
+  &::before {
+    content: '';
+    height: 4px;
+    width: 100%;
+    display: block;
+    background: linear-gradient(45deg, #b2f5ea, #3c366b);
   }
+}
 </style>

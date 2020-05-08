@@ -5,20 +5,13 @@
         {{ section }}
       </p>
       <ul>
-        <li
-          v-for="(note, i) in notes"
-          :key="i"
-        >
+        <li v-for="(note, i) in notes" :key="i">
           <div class="mb-1 flex">
             <ActiveSidebarLink
               v-if="note.lecture === current.lecture"
               :note="current"
             />
-            <g-link
-              v-else
-              :to="note.path"
-              class="text-gray-700 leading-tight"
-            >
+            <g-link v-else :to="note.path" class="text-gray-700 leading-tight">
               {{ note.title }}
             </g-link>
           </div>
@@ -37,16 +30,16 @@ export default {
   props: {
     section: {
       type: String,
-      required: true
+      required: true,
     },
     current: {
       type: Object,
-      required: true
+      required: true,
     },
     notes: {
       type: Array,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 }
 </script>

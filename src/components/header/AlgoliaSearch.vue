@@ -8,7 +8,7 @@
           placeholder="Search..."
           class="w-full shadow-inner bg-gray-200 py-1 px-4 pl-10 rounded-lg h-10 outline-none border focus:border-indigo-800"
           aria-label="Search notes"
-        >
+        />
       </label>
     </div>
   </div>
@@ -27,7 +27,7 @@ export default {
       inputSelector: '#algolia-search',
       handleSelected: (input, _, suggestion) => {
         this.handleSearch(input, suggestion)
-      }
+      },
     })
   },
 
@@ -35,13 +35,13 @@ export default {
     handleSearch({ getVal }, { url }) {
       this.logEvent('search', { search_term: getVal() })
       window.open(url, '_self')
-    }
-  }
+    },
+  },
 }
 </script>
 
 <style lang="scss">
-  .algolia-autocomplete {
-    width: 100%;
-  }
+.algolia-autocomplete {
+  width: 100%;
+}
 </style>
