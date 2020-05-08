@@ -1,5 +1,14 @@
 {
   "courses": [{
+      "name": "Robotics: AI Techniques",
+      "abbrev": "RAIT",
+      "code": "CS7638",
+      "semester": "Summer 2020",
+      "author": "Matt Schlenker",
+      "icon": "cs7638.png",
+      "start": "/robotics-ai-techniques/welcome",
+      "completed": false
+    }, {
     "name": "Machine Learning for Trading",
     "abbrev": "ML4T",
     "code": "CS7646",
