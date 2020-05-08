@@ -5,7 +5,7 @@
         <div
           class="mt-5 mb-2"
         >
-          <div class="mb-8">
+          <div class="mb-8 note-header">
             <h1
               class="text-gray-500 leading-none text-sm mb-1"
               data-level="0"
