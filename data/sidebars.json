@@ -158,5 +158,13 @@
         "udacity-quizzes"
       ]
     }
+  ],
+  "robotics-ai-techniques": [
+    {
+      "section": "Start Here",
+      "notes": [
+        "welcome"
+      ]
+    }
   ]
 }
