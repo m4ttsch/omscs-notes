@@ -15,27 +15,17 @@
 </template>
 
 <script>
-import Analytics from '~/mixins/analytics'
-
 export default {
   name: 'AlgoliaSearch',
-  mixins: [Analytics],
   mounted() {
     docsearch({
       apiKey: '9d9ff52895877e8baeac290c95e89704',
       indexName: 'omscs-notes',
       inputSelector: '#algolia-search',
-      handleSelected: (input, _, suggestion) => {
-        this.handleSearch(input, suggestion)
-      },
+      handleSelected (_, __, { url }) {
+        window.open(url, '_self')
+      }
     })
-  },
-
-  methods: {
-    handleSearch({ getVal }, { url }) {
-      this.logEvent('search', { search_term: getVal() })
-      window.open(url, '_self')
-    },
   },
 }
 </script>

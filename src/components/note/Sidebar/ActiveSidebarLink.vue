@@ -17,7 +17,6 @@
           :href="anchor"
           class="block text-gray-600 text-sm"
           :style="{ paddingLeft: `${(depth - 1) * 16}px` }"
-          @click="logEvent('sidebar_click', { target: anchor })"
           >{{ value }}</a
         >
       </li>
@@ -26,11 +25,8 @@
 </template>
 
 <script>
-import Analytics from '~/mixins/analytics'
-
 export default {
   name: 'ActiveSidebarLink',
-  mixins: [Analytics],
 
   props: {
     note: {

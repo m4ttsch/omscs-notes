@@ -22,14 +22,14 @@
         <a
           href="#"
           class="bg-indigo-800 hover:bg-indigo-700 text-white text-lg font-semibold py-3 px-5 border-b-4 border-indigo-900 hover:border-indigo-800 rounded mr-4"
-          @click.prevent="scrollIntoView('notebooks')"
+          @click.prevent="$emit('scrollIntoView', 'notebooks')"
         >
           Notebooks
         </a>
         <a
           href="#"
           class="bg-teal-200 hover:bg-teal-100 text-teal-900 text-lg font-semibold py-3 px-5 border-b-4 border-teal-300 hover:border-teal-200 rounded"
-          @click.prevent="scrollIntoView('testimonials')"
+          @click.prevent="$emit('scrollIntoView', 'testimonials')"
         >
           Testimonials
         </a>
@@ -46,15 +46,7 @@
 </template>
 
 <script>
-import Analytics from '~/mixins/analytics'
 export default {
   name: 'Hero',
-  mixins: [Analytics],
-  methods: {
-    scrollIntoView(target) {
-      this.logEvent('hero_click', { target })
-      this.$emit('scrollIntoView', target)
-    },
-  },
 }
 </script>
