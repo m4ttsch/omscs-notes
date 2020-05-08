@@ -8,7 +8,6 @@
   </Layout>
 </template>
 
-
 <script>
 import Hero from '~/components/home/Hero'
 import Wave from '~/components/home/GentleWave'
@@ -26,9 +25,9 @@ export default {
       {
         key: 'description',
         name: 'description',
-        content: 'Clear, organized, and forever free OMSCS lecture notes'
-      }
-    ]
+        content: 'Clear, organized, and forever free OMSCS lecture notes',
+      },
+    ],
   },
 
   mounted() {
@@ -39,9 +38,9 @@ export default {
     _scrollIntoView(target) {
       window.scrollTo({
         top: this.$refs[target].$el.getBoundingClientRect().top - 50,
-        behavior: 'smooth'
+        behavior: 'smooth',
       })
-    }
-  }
+    },
+  },
 }
 </script>

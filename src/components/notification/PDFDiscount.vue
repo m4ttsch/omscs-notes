@@ -6,25 +6,18 @@
       :duration="-1"
       :speed="1000"
     >
-      <template
-        slot="body"
-        slot-scope="props"
-      >
+      <template slot="body" slot-scope="props">
         <div
           class="bg-teal-100 border border-teal-200 text-teal-700 rounded relative mx-2 my-3"
           role="alert"
         >
-          <div class="text-xs px-1 pt-1 border-teal-200 border-b flex justify-between text-teal-300">
-            <a
-              href="#"
-              @click="logAndClose(props)"
-            >
+          <div
+            class="text-xs px-1 pt-1 border-teal-200 border-b flex justify-between text-teal-300"
+          >
+            <a href="#" @click="logAndClose(props)">
               close
             </a>
-            <a
-              href="#"
-              @click="logAndCloseForever"
-            >
+            <a href="#" @click="logAndCloseForever">
               close forever
             </a>
           </div>
@@ -37,21 +30,21 @@
               <a
                 class="pdf-link hover:shadow"
                 href="/information-security/download-pdf"
-                @click="logEvent('discount-click', { target: 'IIS'})"
+                @click="logEvent('discount-click', { target: 'IIS' })"
               >
                 Browse IIS
               </a>
               <a
                 class="pdf-link hover:shadow"
                 href="/computer-networks/download-pdf"
-                @click="logEvent('discount-click', { target: 'CN'})"
+                @click="logEvent('discount-click', { target: 'CN' })"
               >
                 Browse CN
               </a>
               <a
                 class="pdf-link hover:shadow"
                 href="/operating-systems/download-pdf"
-                @click="logEvent('discount-click', { target: 'GIOS'})"
+                @click="logEvent('discount-click', { target: 'GIOS' })"
               >
                 Browse GIOS
               </a>
@@ -69,14 +62,14 @@ export default {
   name: 'PDFDiscount',
   mixins: [Analytics],
 
-  data: function() {
+  data: function () {
     return {
-        hideForever: false
-      }
-    },
+      hideForever: false,
+    }
+  },
 
   mounted() {
-    if(localStorage.getItem('pdf-discount-hide-forever')) {
+    if (localStorage.getItem('pdf-discount-hide-forever')) {
       this.hideForever = true
     }
   },
@@ -91,13 +84,13 @@ export default {
       this.logEvent('discount-click', { target: 'close-forever' })
       localStorage.setItem('pdf-discount-hide-forever', true)
       this.hideForever = true
-    }
-  }
+    },
+  },
 }
 </script>
 
 <style media="screen">
-  .pdf-link {
-    @apply text-xs bg-teal-500 text-teal-100 py-1 px-2 rounded shadow-xl;
-  }
+.pdf-link {
+  @apply text-xs bg-teal-500 text-teal-100 py-1 px-2 rounded shadow-xl;
+}
 </style>

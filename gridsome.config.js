@@ -13,7 +13,7 @@ module.exports = {
     linkedin: 'https://www.linkedin.com/in/matt-schlenker-3457b047',
     email: 'matt@omscs-notes.com',
     amazon: 'https://amzn.to/2Pai0bO',
-    paypal: 'https://www.paypal.me/MatthewSchlenker'
+    paypal: 'https://www.paypal.me/MatthewSchlenker',
   },
   plugins: [
     {
@@ -24,13 +24,16 @@ module.exports = {
         typeName: 'Note',
         remark: {
           plugins: [
-            [ 'gridsome-plugin-remark-shiki', { theme: 'nord', skipInline: true } ],
+            [
+              'gridsome-plugin-remark-shiki',
+              { theme: 'nord', skipInline: true },
+            ],
             'remark-autolink-headings',
             'remark-math',
-            'remark-html-katex'
-          ]
-        }
-      }
+            'remark-html-katex',
+          ],
+        },
+      },
     },
     {
       use: 'gridsome-plugin-tailwindcss',
@@ -42,13 +45,13 @@ module.exports = {
         shouldImport: true,
         shouldTimeTravel: true,
         shouldPurgeUnusedKeyframes: true,
-      }
+      },
     },
     {
       use: '@gridsome/plugin-google-analytics',
       options: {
-        id: 'UA-132810678-1'
-      }
-    }
-  ]
+        id: 'UA-132810678-1',
+      },
+    },
+  ],
 }

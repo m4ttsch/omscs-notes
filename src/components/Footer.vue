@@ -8,12 +8,10 @@
           in NYC by Matt Schlenker.
         </p>
         <p>
-          Copyright &copy; 2019-{{ new Date().getFullYear() }}. All rights reserved.
+          Copyright &copy; 2019-{{ new Date().getFullYear() }}. All rights
+          reserved.
         </p>
-        <g-link
-          to="/privacy"
-          class="block text-gray-500"
-        >
+        <g-link to="/privacy" class="block text-gray-500">
           privacy policy
         </g-link>
       </div>
@@ -22,6 +20,5 @@
 </template>
 
 <script>
-export default {
-}
+export default {}
 </script>

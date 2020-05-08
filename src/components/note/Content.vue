@@ -1,15 +1,12 @@
 <template lang="html">
   <div class="Content">
     <div class="p-2 pb-4 lg:p-12">
-      <div class="w-full max-w-2xl px-8 lg:px-16 py-5 rounded shadow m-auto bg-white">
-        <div
-          class="mt-5 mb-2"
-        >
+      <div
+        class="w-full max-w-2xl px-8 lg:px-16 py-5 rounded shadow m-auto bg-white"
+      >
+        <div class="mt-5 mb-2">
           <div class="mb-8 note-header">
-            <h1
-              class="text-gray-500 leading-none text-sm mb-1"
-              data-level="0"
-            >
+            <h1 class="text-gray-500 leading-none text-sm mb-1" data-level="0">
               {{ note.course | pretty }}
             </h1>
             <h2 class="text-4xl leading-none mb-1">
@@ -19,11 +16,11 @@
               {{ note.timeToRead }} minute read
             </p>
           </div>
-          <hr class="w-full border-gray-300">
+          <hr class="w-full border-gray-300" />
           <div class="h-24 my-1 flex items-center">
             <Ad />
           </div>
-          <hr class="w-full border-gray-300">
+          <hr class="w-full border-gray-300" />
         </div>
         <div
           class="markdown-body"
@@ -61,31 +58,39 @@ export default {
 
   filters: {
     pretty(course) {
-      return course.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
-    }
+      return course
+        .split('-')
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ')
+    },
   },
   props: {
     note: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
 
   mounted() {
-    document.addEventListener('scroll', () => this.scrollSpy(), { passive: true })
+    document.addEventListener('scroll', () => this.scrollSpy(), {
+      passive: true,
+    })
   },
 
   methods: {
     scrollSpy(e) {
       const { scrollY, innerHeight } = window
-      const { body: { scrollHeight } } = document
+      const {
+        body: { scrollHeight },
+      } = document
 
       this.$root.$emit(
         'scroll',
-        (scrollY + innerHeight * scrollY / (scrollHeight - innerHeight)) / scrollHeight
+        (scrollY + (innerHeight * scrollY) / (scrollHeight - innerHeight)) /
+          scrollHeight
       )
-    }
-  }
+    },
+  },
 }
 </script>
 
@@ -112,7 +117,12 @@ export default {
     @apply hidden;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply border-none;
 
     a {
@@ -129,7 +139,8 @@ export default {
     }
   }
 
-  h2, h3 {
+  h2,
+  h3 {
     a {
       &:before {
         content: '';
@@ -175,7 +186,8 @@ export default {
     }
   }
 
-  &.textbook-information, &.download-pdf {
+  &.textbook-information,
+  &.download-pdf {
     a {
       img {
         @apply shadow-xl;

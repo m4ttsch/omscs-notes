@@ -10,28 +10,17 @@
       </a>
     </template>
     <template #sidebar:sm>
-      <div
-        v-show="navExpanded"
-        class="fixed z-10 h-full w-full bg-white"
-      >
+      <div v-show="navExpanded" class="fixed z-10 h-full w-full bg-white">
         <div class="relative h-full overflow-y-auto pb-20 pl-10">
-          <Sidebar
-            :current="note"
-            :others="notes"
-          />
+          <Sidebar :current="note" :others="notes" />
         </div>
       </div>
     </template>
     <template #sidebar:lg>
-      <Sidebar
-        :current="note"
-        :others="notes"
-      />
+      <Sidebar :current="note" :others="notes" />
     </template>
     <template #content>
-      <Content
-        :note="note"
-      />
+      <Content :note="note" />
     </template>
   </NoteLayout>
 </template>
@@ -63,7 +52,6 @@
   }
 </page-query>
 <script>
-
 import NoteLayout from '~/layouts/Note'
 import Content from '~/components/note/Content'
 import Sidebar from '~/components/note/Sidebar'
@@ -74,7 +62,7 @@ export default {
 
   data() {
     return {
-      navExpanded: false
+      navExpanded: false,
     }
   },
 
@@ -85,7 +73,7 @@ export default {
 
     note() {
       return this.$page.note
-    }
+    },
   },
 
   watch: {
@@ -95,16 +83,16 @@ export default {
 
     navExpanded() {
       document.body.classList.toggle('overflow-hidden')
-    }
+    },
   },
 
   metaInfo() {
     return {
       title: this.note.title,
       meta: [
-        { key: 'description', name: 'description', content: this.note.title }
-      ]
+        { key: 'description', name: 'description', content: this.note.title },
+      ],
     }
-  }
+  },
 }
 </script>

@@ -1,8 +1,5 @@
 <template lang="html">
-  <div
-    id="thank-you"
-    class="thank-you bg-indigo-100"
-  >
+  <div id="thank-you" class="thank-you bg-indigo-100">
     <div class="block sm:flex justify-end">
       <div class="block sm:hidden w-full hero-pattern h-16" />
       <div class="max-w-lg p-12 py-24 sm:py-32">
@@ -19,7 +16,7 @@
               <a
                 class="border-b-4 border-teal-200"
                 :href="$static.metadata.paypal"
-                @click="logEvent('thank_you_click', {target: 'paypal'})"
+                @click="logEvent('thank_you_click', { target: 'paypal' })"
               >
                 PayPal
               </a>
@@ -29,8 +26,9 @@
               <a
                 class="border-b-4 border-teal-200"
                 :href="$static.metadata.amazon"
-                @click="logEvent('thank_you_click', {target: 'amazon'})"
-              >Amazon</a>
+                @click="logEvent('thank_you_click', { target: 'amazon' })"
+                >Amazon</a
+              >
               referral link
               <VPopover
                 placement="top-start"
@@ -46,7 +44,8 @@
                   slot="popover"
                   class="bg-gray-700 text-gray-100 leading-tight rounded px-4 py-3 text-sm w-64"
                 >
-                  For referring you, Amazon pays me a small percentage of your purchase amount as commission.
+                  For referring you, Amazon pays me a small percentage of your
+                  purchase amount as commission.
                   <a
                     class="text-teal-200"
                     href="https://affiliate-program.amazon.com/"
@@ -61,7 +60,7 @@
               <a
                 class="border-b-4 border-teal-200"
                 :href="$static.metadata.mainGithub"
-                @click="logEvent('thank_you_click', {target: 'github'})"
+                @click="logEvent('thank_you_click', { target: 'github' })"
               >
                 GitHub
               </a>
@@ -85,7 +84,6 @@
   </div>
 </template>
 
-
 <static-query>
   query {
     metadata {
@@ -104,7 +102,7 @@ import { VPopover } from 'v-tooltip'
 export default {
   name: 'ThankYou',
   components: { VPopover },
-  mixins: [Analytics]
+  mixins: [Analytics],
 }
 </script>
 

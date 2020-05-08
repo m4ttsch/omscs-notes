@@ -5,10 +5,7 @@
         <h1 class="text-6xl leading-none">
           404.
         </h1>
-        <a
-          href="/"
-          class="text-indigo-800"
-        >
+        <a href="/" class="text-indigo-800">
           Let's go home.
         </a>
       </div>
@@ -19,7 +16,7 @@
 <script>
 export default {
   metaInfo: {
-    title: '404'
-  }
+    title: '404',
+  },
 }
 </script>

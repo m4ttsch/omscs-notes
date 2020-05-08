@@ -1,24 +1,19 @@
 module.exports = {
-  parser: 'vue-eslint-parser',
-  parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true
-    }
-  },
+  root: true,
   env: {
-    browser: true,
-    es6: true
+    node: true,
   },
-  plugins: [
-    'gridsome'
-  ],
   extends: [
+    'plugin:vue/essential',
+    'plugin:prettier/recommended',
+    '@vue/prettier',
     'plugin:gridsome/recommended',
-    'plugin:vue/recommended'
   ],
   rules: {
-    'vue/no-v-html': 'off'
-  }
-};
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+  },
+  parserOptions: {
+    parser: 'babel-eslint',
+  },
+}
