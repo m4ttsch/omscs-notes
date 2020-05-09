@@ -9,15 +9,15 @@
           <PrimaryNavLinks />
         </div>
         <div class="flex flex-row-reverse flex-1">
-          <div class="w-full md:max-w-xs">
+          <div class="w-full lg:max-w-xs">
             <AlgoliaSearch />
           </div>
         </div>
-        <div class="ml-8 text-gray-400 hidden md:block">
+        <div class="ml-8 text-gray-400 hidden lg:block">
           <ExternalLinks />
         </div>
         <div
-          class="ml-4 sm:ml-8 block md:hidden text-indigo-800 cursor-pointer"
+          class="ml-4 sm:ml-8 block lg:hidden text-indigo-800 cursor-pointer"
         >
           <div v-if="!expanded" class="w-5">
             <a href="#" @click.prevent="expanded = true">
@@ -34,9 +34,9 @@
     </header>
     <div
       v-show="expanded"
-      class="flex md:hidden items-center justify-between py-4 px-4 sm:px-8 border-gray-300 border-b bg-white w-full"
+      class="sm:flex lg:hidden items-center justify-between md:justify-center py-4 sm:px-8 border-gray-300 border-b bg-white w-full"
     >
-      <div class="text-gray-600">
+      <div class="text-gray-600 mb-3 md:hidden sm:mb-0">
         <PrimaryNavLinks @click="expanded = false" />
       </div>
       <div class="text-gray-400">

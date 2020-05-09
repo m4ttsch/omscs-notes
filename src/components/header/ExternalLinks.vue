@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="ExternalLinks">
-    <div class="flex">
+    <div class="flex justify-center">
       <div class="icon-link">
         <a
           target="_blank"
