@@ -1,18 +1,22 @@
 <template>
   <Layout>
-    <div class="flex justify-center items-center">
-      <div class="m-48">
-        <h1 class="text-6xl leading-none">
-          Hi.
-        </h1>
-      </div>
+    <div class="flex justify-center items-center py-5">
+      <a @click.prevent="doIt">Do it</a>
     </div>
   </Layout>
 </template>
 
 <script>
 export default {
-
+  methods: {
+    doIt() {
+      Payhip.Checkout.open({
+            product: "9UGM",
+            message: "A custom message to add to the checkout",
+            method: "overlay"
+        });
+    }
+  }
 }
 </script>
 
