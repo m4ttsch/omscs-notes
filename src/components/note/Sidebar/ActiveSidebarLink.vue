@@ -38,12 +38,12 @@ export default {
   data() {
     return {
       expanded: false,
-      collapsible: true
+      collapsible: true,
     }
   },
 
   mounted() {
-    if(this.note.lecture === 'welcome') {
+    if (this.note.lecture === 'welcome') {
       this.collapsible = false
     }
   },
