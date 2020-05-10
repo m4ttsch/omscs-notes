@@ -35,18 +35,16 @@
         </a>
       </div>
       <div class="hidden lg:block">
-        <g-image
-          src="~/assets/images/dev_productivity.svg"
-          width="400"
-          alt="man-studying-on-computer"
-        />
+        <HeroImage />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import HeroImage from './HeroImage.vue'
 export default {
   name: 'Hero',
+  components: { HeroImage },
 }
 </script>
