@@ -2,7 +2,7 @@
   <div class="ActiveSidebarLink">
     <a href="#" @click.prevent="expanded = !expanded">
       <div class="flex text-gray-700">
-        <div class="mr-1 flex items-center">
+        <div class="mr-1 flex items-center" v-if="collapsible">
           <i v-if="expanded" class="fas fa-minus fa-xs" />
           <i v-else class="fas fa-plus fa-xs" />
         </div>
@@ -11,7 +11,7 @@
         </p>
       </div>
     </a>
-    <ul v-if="expanded">
+    <ul v-if="expanded || !collapsible">
       <li v-for="({ value, depth, anchor }, i) in headings" :key="i">
         <a
           :href="anchor"
@@ -38,6 +38,13 @@ export default {
   data() {
     return {
       expanded: false,
+      collapsible: true
+    }
+  },
+
+  mounted() {
+    if(this.note.lecture === 'welcome') {
+      this.collapsible = false
     }
   },
 
