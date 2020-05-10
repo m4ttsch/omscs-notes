@@ -5,7 +5,7 @@
       "code": "CS7638",
       "semester": "Summer 2020",
       "author": "Matt Schlenker",
-      "icon": "cs7638.png",
+      "icon": "https://assets.omscs.io/courses/cs7638.png",
       "start": "/robotics-ai-techniques/welcome",
       "completed": false
     }, {
@@ -14,7 +14,7 @@
     "code": "CS7646",
     "semester": "Spring 2020",
     "author": "Matt Schlenker",
-    "icon": "cs7646.png",
+    "icon": "https://assets.omscs.io/courses/cs7646.png",
     "start": "/machine-learning-trading/welcome",
     "completed": true,
     "grade": "A"
@@ -25,7 +25,7 @@
     "semester": "Fall 2019",
     "author": "Matt Schlenker",
     "grade": "A",
-    "icon": "cs6035.png",
+    "icon": "https://assets.omscs.io/courses/cs6035.png",
     "start": "/information-security/welcome",
     "completed": true
   }, {
@@ -35,7 +35,7 @@
     "semester": "Spring 2019",
     "author": "Matt Schlenker",
     "grade": "A",
-    "icon": "cs6250.png",
+    "icon": "https://assets.omscs.io/courses/cs6250.png",
     "start": "/computer-networks/welcome",
     "completed": true
   },{
@@ -45,7 +45,7 @@
     "semester": "Fall 2018",
     "author": "Matt Schlenker",
     "grade": "A",
-    "icon": "cs6200.png",
+    "icon": "https://assets.omscs.io/courses/cs6200.png",
     "start": "/operating-systems/welcome",
     "completed": true
   }]

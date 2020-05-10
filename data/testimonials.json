@@ -2,35 +2,35 @@
   "testimonials": [
     {
       "name": "Vasudha Madugula",
-      "image": "vasudhamadugula.jpg",
+      "image": "https://assets.omscs.io/testimonials/vasudhamadugula.jpg",
       "semester": "Spring 2020",
       "quote": "OMSCS Notes was a boon during my final revisions for the IIS exams! The lesson notes were crisp and the practice questions forced me to recheck my understanding of important concepts. Kudos to you Matt, for maintaining the page!"
     },
     {
       "name": "Alex Naymark",
-      "image": "alexnaymark.jpg",
+      "image": "https://assets.omscs.io/testimonials/alexnaymark.jpg",
       "semester": "Spring 2020",
       "quote": "Matt has put together a very valuable tool for anyone in OMSCS! Organized, concise, and the exam preparation is unmatched. Cheers Matt, you made something very cool and I hope to see it grow!"
     },
     {
       "name": "Melissa Chen",
-      "image": "melissachen.jpg",
+      "image": "https://assets.omscs.io/testimonials/melissachen.jpg",
       "semester": "Spring 2020",
       "quote": "Matt's notes are excellent. They are well-organized, detailed, and save me a lot of studying time. I really appreciate that he built this for OMSCS students!"
     },
     {
       "name": "Robert Ehlers",
-      "image": "robertehlers.png",
+      "image": "https://assets.omscs.io/testimonials/robertehlers.png",
       "semester": "Spring 2019",
       "quote": "Matt's notes were an invaluable resource for my success in GIOS. My exam scores definitely increased by reviewing them beforehand. Having such a detailed and well organized reference made finding course material much easier than hunting through lecture videos."
     },{
       "name": "Samuel Bigio",
-      "image": "samuelbigio.jpg",
+      "image": "https://assets.omscs.io/testimonials/samuelbigio.jpg",
       "semester": "Spring 2019",
       "quote": "If you get a chance to study Matt's notes you can tell the effort he put into it, and it really pays off."
     },{
       "name": "Taneem Ibrahim",
-      "image": "taneemibrahim.png",
+      "image": "https://assets.omscs.io/testimonials/taneemibrahim.png",
       "semester": "Spring 2019",
       "quote": "I found Matt’s notes to be a life saver in studying for Computer Networks exams. The notes are very thorough and articulates the central ideas in each lecture very well. Thank you Matt for taking the time to create these invaluable resources for the OMSCS students."
     }

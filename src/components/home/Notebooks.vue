@@ -14,7 +14,7 @@
               <div class="h-full">
                 <div class="flex items-center px-6 py-8 sm:p-16">
                   <img
-                    :src="`/assets/images/courses/${course.icon}`"
+                    :src="course.icon"
                     class="h-12 w-12 sm:h-24 sm:w-24 mr-6"
                     :alt="`Icon for ${course.name}`"
                   />
