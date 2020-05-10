@@ -19,7 +19,7 @@
                 <div class="flex justify-center text-lg text-left">
                   <img
                     class="rounded-full h-12"
-                    :src="`/assets/images/testimonials/${testimonial.image}`"
+                    :src="testimonial.image"
                     width="48"
                     height="48"
                     :alt="`Portrait of ${testimonial.name}`"
