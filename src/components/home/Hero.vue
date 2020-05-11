@@ -12,27 +12,40 @@
           </span>
         </h1>
         <p
-          class="text-sm sm:text-base leading-relaxed sm:leading-snug my-8 mb-10 max-w-xs sm:max-w-md"
+          class="text-sm sm:text-base leading-relaxed sm:leading-snug mt-8 max-w-xs sm:max-w-md"
         >
           I built OMSCS Notes to share my notes with other students in the
           GATech OMSCS program. My notes are searchable, navigable, and, most
-          importantly, free. I hope they help you on your journey here. Happy
-          studying!
+          importantly, free. I hope they help you on your journey here.
         </p>
-        <a
-          href="#"
-          class="bg-indigo-800 hover:bg-indigo-700 text-white text-lg font-semibold py-3 px-5 border-b-4 border-indigo-900 hover:border-indigo-800 rounded mr-4"
-          @click.prevent="$emit('scrollIntoView', 'notebooks')"
-        >
-          Notebooks
-        </a>
-        <a
-          href="#"
-          class="bg-teal-200 hover:bg-teal-100 text-teal-900 text-lg font-semibold py-3 px-5 border-b-4 border-teal-300 hover:border-teal-200 rounded"
-          @click.prevent="$emit('scrollIntoView', 'testimonials')"
-        >
-          Testimonials
-        </a>
+        <p class="my-8 text-sm max-w-xs sm:max-w-md">
+          <i class="far fa-bell mr-1 text-indigo-800" />
+          Take 10% off any downloadable content by
+          <a
+            href="#"
+            class="border-b-2 border-teal-200"
+            @click.prevent="openMailchimp"
+          >
+            signing up
+          </a>
+          before May 25<sup>th</sup>.
+        </p>
+        <div class="flex">
+          <a
+            href="#"
+            class="bg-indigo-800 hover:bg-indigo-700 text-white text-lg font-semibold py-3 px-5 border-b-4 border-indigo-900 hover:border-indigo-800 rounded mr-4"
+            @click.prevent="$emit('scrollIntoView', 'notebooks')"
+          >
+            Notebooks
+          </a>
+          <a
+            href="#"
+            class="bg-teal-200 hover:bg-teal-100 text-teal-900 text-lg font-semibold py-3 px-5 border-b-4 border-teal-300 hover:border-teal-200 rounded"
+            @click.prevent="$emit('scrollIntoView', 'testimonials')"
+          >
+            Testimonials
+          </a>
+        </div>
       </div>
       <div class="hidden lg:block">
         <HeroImage />
@@ -43,8 +56,10 @@
 
 <script>
 import HeroImage from './HeroImage.vue'
+import MailChimp from '~/mixins/mailchimp'
 export default {
   name: 'Hero',
+  mixins: [MailChimp],
   components: { HeroImage },
 }
 </script>

@@ -18,31 +18,39 @@
           </div>
         </div>
         <div class="max-w-3xl bg-white rounded pb-5 mx-5 md:mx-auto">
-          <div class="flex justify-center items-center pt-8 pb-3">
-            <span class="block mr-4 text-gray-600 uppercase text-sm"
-              >Filter:</span
+          <div class="pt-8 pb-3 px-10 block sm:flex justify-between">
+            <a
+              class="block text-center text-indigo-800 hover:underline cursor-pointer"
+              href="#"
+              @click.prevent="openMailchimp"
+              >Want 10% off?</a
             >
-            <div class="flex items-center">
-              <div
-                v-for="(id, i) in filters"
-                :key="i"
-                class="block text-sm mr-2"
+            <div class="flex justify-center items-center">
+              <span class="block mr-4 text-gray-600 uppercase text-sm"
+                >Filter:</span
               >
-                <a
-                  href="#"
-                  @click.prevent="filter = id"
-                  v-if="filter != id"
-                  class="hover:text-indigo-600 hover:underline"
+              <div class="flex items-center">
+                <div
+                  v-for="(id, i) in filters"
+                  :key="i"
+                  class="block text-sm mr-2"
                 >
-                  {{ id }}
-                </a>
-                <span
-                  @click.prevent="filter = null"
-                  v-else
-                  class="text-indigo-600 cursor-pointer"
-                >
-                  {{ id }}
-                </span>
+                  <a
+                    href="#"
+                    @click.prevent="filter = id"
+                    v-if="filter != id"
+                    class="hover:text-indigo-600 hover:underline"
+                  >
+                    {{ id }}
+                  </a>
+                  <span
+                    @click.prevent="filter = null"
+                    v-else
+                    class="text-indigo-600 cursor-pointer"
+                  >
+                    {{ id }}
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -98,10 +106,12 @@
 import { pdfs } from '~/../data/pdfs.json'
 import { courses } from '~/../data/courses.json'
 import { VPopover } from 'v-tooltip'
+import MailChimp from '~/mixins/mailchimp.js'
 
 export default {
   name: 'Download',
   components: { VPopover },
+  mixins: [MailChimp],
   data() {
     const filters = courses
       .filter(({ completed }) => completed)
