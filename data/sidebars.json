@@ -157,6 +157,12 @@
       "notes": [
         "welcome"
       ]
+    },
+    { 
+      "section": "Lecture Notes",
+      "notes": [
+        "localization-overview"
+      ]
     }
   ]
 }
