@@ -161,7 +161,8 @@
     { 
       "section": "Lecture Notes",
       "notes": [
-        "localization-overview"
+        "localization-overview",
+        "kalman-filters"
       ]
     }
   ]
