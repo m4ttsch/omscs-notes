@@ -18,9 +18,9 @@
           </div>
         </div>
         <div class="max-w-3xl bg-white rounded pb-5 mx-5 md:mx-auto">
-          <div class="pt-8 pb-3 px-10 block sm:flex justify-between">
+          <div class="pt-8 pb-3 px-10 block sm:flex justify-center">
             <a
-              class="block text-center text-indigo-800 hover:underline cursor-pointer"
+              class="block text-center hidden text-indigo-800 hover:underline cursor-pointer"
               href="#"
               @click.prevent="openMailchimp"
               >Want 10% off?</a
