@@ -162,7 +162,8 @@
       "section": "Lecture Notes",
       "notes": [
         "localization-overview",
-        "kalman-filters"
+        "kalman-filters",
+        "particle-filters"
       ]
     }
   ]
