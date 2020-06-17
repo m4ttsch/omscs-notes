@@ -3,7 +3,7 @@
     <div class="w-full px-5 md:mr-10 text-gray-600 h-full">
       <div class="bg-white text-gray-800 shadow-lg p-5 mb-5 text-sm">
         <p>
-          <b>Happy studying!</b> Did you find my notes useful this sememster?
+          <b>Happy studying!</b> Did you find my notes useful this semester?
           Please consider
           <a
             class="text-blue-500 hover:text-blue-700"
