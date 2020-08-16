@@ -51,6 +51,16 @@
           <i class="fab fa-paypal fa-lg" />
         </a>
       </div>
+      <div class="icon-link">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          :href="$static.metadata.buyMeACoffee"
+          aria-label="buy me a beer"
+        >
+          <span class="text-lg leading-tight">🍺</span>
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -63,6 +73,7 @@
       email
       paypal
       amazon
+      buyMeACoffee
     }
   }
 </static-query>

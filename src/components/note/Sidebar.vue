@@ -11,12 +11,18 @@
             rel="noopener noreferrer"
             :href="$static.metadata.paypal"
             aria-label="paypal"
-            @click="logEvent('nav_click', { target: 'paypal' })"
           >
             giving me a few bucks
           </a>
-          (<i>no more than $20, please</i>). Contributions like yours help me
-          keep these notes forever free.
+          or
+          <a
+            class="text-blue-500 hover:text-blue-700"
+            target="_blank"
+            rel="noopener noreferrer"
+            :href="$static.metadata.buyMeACoffee"
+            aria-label="buy me a beer"
+          >
+            buying me a beer </a>. Contributions like yours help me keep these notes forever free.
         </p>
       </div>
       <SidebarGroup
@@ -34,6 +40,7 @@
   query {
     metadata {
       paypal
+      buyMeACoffee
     }
   }
 </static-query>

@@ -16,8 +16,19 @@
               <a
                 class="border-b-4 border-teal-200"
                 :href="$static.metadata.paypal"
+                target="_blank"
               >
                 PayPal
+              </a>
+            </li>
+            <li class="mb-2">
+              buying me a
+              <a
+                class="border-b-4 border-teal-200"
+                :href="$static.metadata.buyMeACoffee"
+                target="_blank"
+              >
+                beer
               </a>
             </li>
             <li class="mb-2">
@@ -88,6 +99,7 @@
       amazon
       mainGithub
       email
+      buyMeACoffee
     }
   }
 </static-query>
