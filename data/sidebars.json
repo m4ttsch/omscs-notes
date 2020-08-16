@@ -151,19 +151,11 @@
       ]
     }
   ],
-  "robotics-ai-techniques": [
+  "simulation": [
     {
       "section": "Start Here",
       "notes": [
         "welcome"
-      ]
-    },
-    { 
-      "section": "Lecture Notes",
-      "notes": [
-        "localization-overview",
-        "kalman-filters",
-        "particle-filters"
       ]
     }
   ]

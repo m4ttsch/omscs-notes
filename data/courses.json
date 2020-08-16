@@ -1,5 +1,14 @@
 {
   "courses": [{
+      "name": "Simulation",
+      "abbrev": "Simulation",
+      "code": "ISYE6644",
+      "semester": "Fall 2020",
+      "author": "Matt Schlenker",
+      "icon": "https://assets.omscs.io/courses/isye6644.png",
+      "start": "/simulation/welcome",
+      "completed": false
+    },{
     "name": "Machine Learning for Trading",
     "abbrev": "ML4T",
     "code": "CS7646",
