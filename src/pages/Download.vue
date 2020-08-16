@@ -57,19 +57,20 @@
           <div class="flex justify-center flex-wrap">
             <div v-for="(pdf, i) in filtered" :key="i">
               <div class="p-5">
-                <img
-                  :alt="pdf.name"
-                  :src="pdf.image"
-                  width="200"
-                  @click.prevent="checkout(pdf)"
-                  class="rounded mb-2 cursor-pointer"
-                />
+                <a :href="pdf.productUrl" target="_blank">
+                  <img
+                    :alt="pdf.name"
+                    :src="pdf.imageUrl"
+                    width="200"
+                    class="rounded mb-2 cursor-pointer"
+                  />
+                </a>
                 <div class="flex justify-between">
                   <div class="flex items-center">
                     <a
-                      href="#"
+                      :href="pdf.productUrl"
                       class="text-sm leading-none mr-1 hover:underline"
-                      @click.prevent="checkout(pdf)"
+                      target="_blank"
                     >
                       {{ pdf.course }}: {{ pdf | subtitle }}
                     </a>
@@ -134,16 +135,6 @@ export default {
     subtitle({ name }) {
       return name.split(' - ')[1]
     },
-  },
-
-  methods: {
-    checkout({ id, title, description }) {
-      Payhip.Checkout.open({
-        product: id,
-        message: description,
-        method: 'overlay',
-      })
-    },
-  },
+  }
 }
 </script>
