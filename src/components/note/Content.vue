@@ -7,7 +7,7 @@
         <div class="mt-5 mb-2">
           <div class="mb-8 note-header">
             <h1 class="text-gray-500 leading-none text-sm mb-1" data-level="0">
-              {{ note.course | pretty }}
+              {{ courseTitle }}
             </h1>
             <h2 class="text-4xl leading-none mb-1">
               {{ note.title }}
@@ -22,21 +22,32 @@
           </div>
           <hr class="w-full border-gray-300" />
         </div>
+        <p class="text-sm mt-6">
+          <i class="far fa-bell mr-1 text-teal-600" />
+          Notice a <span class="line-through">tyop</span> typo? Please submit an
+          <a
+            class="text-teal-600 hover:underline"
+            :href="`${$static.metadata.notesGithub}/issues/new?template=typo-report.md&title=[TYPO] ${courseTitle} - ${note.title}`"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            issue
+          </a>
+          or open a
+          <a
+            class="text-teal-600 hover:underline"
+            :href="`${$static.metadata.notesGithub}/edit/master/${note.course}/${note.lecture}.md`"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            PR</a
+          >.
+        </p>
         <div
           class="markdown-body"
           :class="note.lecture"
           v-html="note.content"
         />
-      </div>
-      <div class="text-xs text-teal-600 hover:text-teal-800 p-3">
-        <a
-          :href="`${$static.metadata.notesGithub}/edit/master/${note.course}/${note.lecture}.md`"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="far fa-edit" />
-          this page in github
-        </a>
       </div>
     </div>
   </div>
@@ -56,14 +67,15 @@ export default {
   name: 'Content',
   components: { Ad },
 
-  filters: {
-    pretty(course) {
-      return course
+  computed: {
+    courseTitle() {
+      return this.note.course
         .split('-')
         .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
         .join(' ')
     },
   },
+
   props: {
     note: {
       type: Object,

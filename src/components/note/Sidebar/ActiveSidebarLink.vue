@@ -37,14 +37,8 @@ export default {
 
   data() {
     return {
-      expanded: false,
+      expanded: true,
       collapsible: true,
-    }
-  },
-
-  mounted() {
-    if (this.note.lecture === 'welcome') {
-      this.collapsible = false
     }
   },
 
