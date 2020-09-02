@@ -8,3 +8,4 @@ dist
 .env.*
 .firebase/
 yarn-error.log
+.vscode/
