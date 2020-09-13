@@ -113,6 +113,11 @@ export default {
   @apply font-sans;
   @apply text-gray-700;
 
+  .math {
+    @apply w-full;
+    @apply overflow-x-auto;
+  }
+
   a {
     @apply text-teal-600;
   }
