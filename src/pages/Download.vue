@@ -104,7 +104,6 @@
 </template>
 
 <script>
-import { pdfs } from '~/../data/pdfs.json'
 import { courses } from '~/../data/courses.json'
 import { VPopover } from 'v-tooltip'
 import MailChimp from '~/mixins/mailchimp.js'
@@ -114,16 +113,27 @@ export default {
   components: { VPopover },
   mixins: [MailChimp],
   data() {
-    const filters = courses
-      .filter(({ completed }) => completed)
-      .map(({ abbrev }) => abbrev)
-
-    const filter = null
-
-    return { pdfs, filter, filters }
+    return {
+      courses,
+      filter: null,
+    }
   },
 
   computed: {
+    filters() {
+      return this.courses
+        .filter(({ completed }) => completed)
+        .map(({ abbrev }) => abbrev)
+    },
+
+    pdfs() {
+      return this.courses
+        .reduce((res, { abbrev, pdfs }) => {
+          return [...res, ...pdfs.map((pdf) => ({ ...pdf, course: abbrev }))]
+        }, [])
+        .sort((a, b) => b.price - a.price)
+    },
+
     filtered() {
       return this.pdfs.filter(({ course }) =>
         this.filter ? course === this.filter : course

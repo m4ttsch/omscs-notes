@@ -11,6 +11,10 @@
               v-if="note.lecture === current.lecture"
               :note="current"
             />
+            <a v-else-if="note.external" :href="note.path" target="_blank" class="display-flex">
+              <span class="display-block mr-1">{{ note.title }}</span>
+              <i class="fas fa-external-link-alt" />
+            </a>
             <g-link v-else :to="note.path" class="text-gray-700 leading-tight">
               {{ note.title }}
             </g-link>
