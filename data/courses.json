@@ -10,7 +10,15 @@
       "icon": "https://assets.omscs.io/courses/isye6644.png",
       "start": "/simulation/welcome",
       "completed": false,
-      "pdfs": []
+      "pdfs": [
+        {
+          "productUrl": "https://payhip.com/b/Lk14",
+          "name": "Simulation - Exam 1 Cheat Sheet",
+          "description": "A two-page PDF cheat sheet for Simulation Exam 1. The source .tex file is included for easy editing.",
+          "price": 0,
+          "imageUrl": "https://assets.omscs.io/pdfs/sim-exam-1-cheat-sheet.png"
+        }
+      ]
     },
     {
       "id": "machine-learning-trading",

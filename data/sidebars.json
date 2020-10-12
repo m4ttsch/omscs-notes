@@ -227,6 +227,17 @@
       ]
     },
     {
+      "section": "Download Notes",
+      "notes": [
+        {
+          "lecture": null,
+          "title": "Exam 1 Cheat Sheet",
+          "path": "https://payhip.com/b/Lk14",
+          "external": true
+        }
+      ]
+    },
+    {
       "section": "Lecture Notes",
       "notes": [
         "course-tour",

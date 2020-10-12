@@ -122,7 +122,7 @@ export default {
   computed: {
     filters() {
       return this.courses
-        .filter(({ completed }) => completed)
+        .filter(({ pdfs }) => pdfs.length)
         .map(({ abbrev }) => abbrev)
     },
 
