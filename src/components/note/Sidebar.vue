@@ -22,7 +22,7 @@
             :href="$static.metadata.buyMeACoffee"
             aria-label="buy me a beer"
           >
-            buying me a beer </a>. Contributions like yours help me keep these notes forever free.
+            buying me a beer</a>. Contributions like yours help me keep these notes forever free.
         </p>
       </div>
       <SidebarGroup
@@ -68,7 +68,11 @@ export default {
     sidebarSections() {
       return sidebars[this.current.course].map(({ section, notes }) => {
         notes = notes.map((note) => {
-          return this.others.find(({ lecture }) => note === lecture)
+          if (typeof note === 'string') {
+            return this.others.find(({ lecture }) => note === lecture)
+          } else {
+            return note
+          }
         })
 
         return { section, notes }

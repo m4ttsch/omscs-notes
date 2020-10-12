@@ -7,6 +7,29 @@
       ]
     },
     {
+      "section": "Download Notes",
+      "notes": [
+        {
+          "lecture": null,
+          "title": "GIOS Complete",
+          "path": "https://payhip.com/b/9I1Q",
+          "external": true
+        },
+        {
+          "lecture": null,
+          "title": "GIOS Lecture Notes",
+          "path": "https://payhip.com/b/VJ40",
+          "external": true
+        },
+        {
+          "lecture": null,
+          "title": "GIOS Exam Review",
+          "path": "https://payhip.com/b/BCoS",
+          "external": true
+        }
+      ]
+    },
+    {
       "section": "Lecture Notes",
       "notes": [
         "introduction-to-operating-systems",
@@ -43,6 +66,17 @@
       ]
     },
     {
+      "section": "Download Notes",
+      "notes": [
+        {
+          "lecture": null,
+          "title": "CN Complete",
+          "path": "https://payhip.com/b/9UGM",
+          "external": true
+        }
+      ]
+    },
+    {
       "section": "Lecture Notes",
       "notes": [
         "architecture-and-principles",
@@ -69,6 +103,29 @@
       "section": "Start Here",
       "notes": [
         "welcome"
+      ]
+    },
+    {
+      "section": "Download Notes",
+      "notes": [
+        {
+          "lecture": null,
+          "title": "IIS Complete",
+          "path": "https://payhip.com/b/51wH",
+          "external": true
+        },
+        {
+          "lecture": null,
+          "title": "IIS Lecture Notes",
+          "path": "https://payhip.com/b/X1j0",
+          "external": true
+        },
+        {
+          "lecture": null,
+          "title": "IIS Exam Review",
+          "path": "https://payhip.com/b/34Xw",
+          "external": true
+        }
       ]
     },
     {
@@ -111,6 +168,17 @@
       "section": "Start Here",
       "notes": [
         "welcome"
+      ]
+    },
+    {
+      "section": "Download Notes",
+      "notes": [
+        {
+          "lecture": null,
+          "title": "ML4T Complete",
+          "path": "https://payhip.com/b/h5Pv",
+          "external": true
+        }
       ]
     },
     {
