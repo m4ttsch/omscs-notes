@@ -246,7 +246,8 @@
         "hand-and-spreadsheet-simulations",
         "general-simulation-principles",
         "arena",
-        "arena-cont"
+        "arena-cont",
+        "generating-uniform-random-numbers"
       ]
     }
   ]
