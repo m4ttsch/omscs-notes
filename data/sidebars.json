@@ -247,7 +247,8 @@
         "general-simulation-principles",
         "arena",
         "arena-cont",
-        "generating-uniform-random-numbers"
+        "generating-uniform-random-numbers",
+        "random-variate-generation"
       ]
     }
   ]
