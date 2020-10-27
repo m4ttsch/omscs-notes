@@ -248,7 +248,8 @@
         "arena",
         "arena-cont",
         "generating-uniform-random-numbers",
-        "random-variate-generation"
+        "random-variate-generation",
+        "random-variate-generation-cont"
       ]
     }
   ]
