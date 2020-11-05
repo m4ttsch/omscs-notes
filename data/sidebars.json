@@ -249,7 +249,8 @@
         "arena-cont",
         "generating-uniform-random-numbers",
         "random-variate-generation",
-        "random-variate-generation-cont"
+        "random-variate-generation-cont",
+        "input-analysis"
       ]
     }
   ]
