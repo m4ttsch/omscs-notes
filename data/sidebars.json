@@ -256,7 +256,8 @@
         "generating-uniform-random-numbers",
         "random-variate-generation",
         "random-variate-generation-cont",
-        "input-analysis"
+        "input-analysis",
+        "output-data-analysis"
       ]
     }
   ]
