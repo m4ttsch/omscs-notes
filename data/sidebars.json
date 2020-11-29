@@ -258,7 +258,8 @@
         "random-variate-generation-cont",
         "input-analysis",
         "output-data-analysis",
-        "comparing-systems"
+        "comparing-systems",
+        "comparing-systems-cont"
       ]
     }
   ]
