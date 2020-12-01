@@ -7,18 +7,16 @@
       <slot />
     </div>
     <Footer />
-    <ThanksgivingDiscount />
   </div>
 </template>
 
 <script>
-import ThanksgivingDiscount from '~/components/notification/ThanksgivingDiscount'
 
 import Header from '~/components/Header'
 import Footer from '~/components/Footer'
 
 export default {
   name: 'Layout',
-  components: { Header, Footer, ThanksgivingDiscount },
+  components: { Header, Footer },
 }
 </script>
