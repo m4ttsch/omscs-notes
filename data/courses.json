@@ -22,9 +22,30 @@
         {
           "productUrl": "https://payhip.com/b/POqp",
           "name": "SIM - Exam 2 Cheat Sheet",
-          "description": "A two-page PDF cheat sheet for Simulation Exam 2. The source .tex file is included for easy editing.",
+          "description": "A four-page PDF cheat sheet for Simulation Exam 2. The source .tex file is included for easy editing.",
           "price": 10,
           "imageUrl": "https://assets.omscs.io/pdfs/sim-exam-2-cheat-sheet.png"
+        },
+        {
+          "productUrl": "https://payhip.com/b/mZis",
+          "name": "SIM - Exam 3 Cheat Sheet",
+          "description": "A six-page PDF cheat sheet for Simulation Exam 3. The source .tex file is included for easy editing.",
+          "price": 10,
+          "imageUrl": "https://assets.omscs.io/pdfs/sim-exam-3-cheat-sheet.png"
+        },
+        {
+          "productUrl": "https://payhip.com/b/kzli",
+          "name": "SIM - Lecture Notes",
+          "description": "The complete set of Simulation lecture notes, covering content from all ten modules.",
+          "price": 30,
+          "imageUrl": "https://assets.omscs.io/pdfs/sim_lecture_notes.png"
+        },
+        {
+          "productUrl": "https://payhip.com/b/PZen",
+          "name": "SIM - Complete",
+          "description": "The complete set of Simulation notes, including lecture notes and exam review materials.",
+          "price": 50,
+          "imageUrl": "https://assets.omscs.io/pdfs/sim_complete.png"
         }
       ]
     },
