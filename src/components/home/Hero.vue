@@ -20,15 +20,15 @@
         </p>
         <p class="my-8 text-sm max-w-xs sm:max-w-md">
           <i class="far fa-bell mr-1 text-indigo-800" />
-          Join the party.
+          Take 25% off any downloadable content by
           <a
             href="#"
             class="border-b-2 border-teal-200"
             @click.prevent="openMailchimp"
           >
-            Sign up
+            signing up
           </a>
-          today.
+          by January 31<sup>st</sup>.
         </p>
         <div class="flex">
           <a
