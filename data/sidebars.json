@@ -280,5 +280,14 @@
         "comparing-systems-cont"
       ]
     }
+  ],
+  "secure-computer-systems": [
+    {
+      "section": "Lecture Notes",
+      "notes": [
+        "getting-started",
+        "design-principles"
+      ]
+    }
   ]
 }
