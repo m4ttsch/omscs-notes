@@ -285,6 +285,7 @@
     {
       "section": "Lecture Notes",
       "notes": [
+        "welcome",
         "getting-started",
         "design-principles"
       ]
