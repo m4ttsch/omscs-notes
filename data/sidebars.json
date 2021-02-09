@@ -285,9 +285,11 @@
     {
       "section": "Lecture Notes",
       "notes": [
-        "welcome",
-        "getting-started",
-        "design-principles"
+        "00-welcome",
+        "01-getting-started",
+        "02-design-principles",
+        "03-protecting-tcb",
+        "04-virtualization"
       ]
     }
   ]
