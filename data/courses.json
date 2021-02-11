@@ -174,7 +174,8 @@
       "grade": "TBD",
       "icon": "https://assets.omscs.io/courses/cs6238.png",
       "start": "/secure-computer-systems/00-welcome",
-      "completed": false
+      "completed": false,
+      "pdfs": []
     }
   ]
 }
