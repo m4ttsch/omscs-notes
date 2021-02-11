@@ -69,64 +69,64 @@
           "imageUrl": "https://assets.omscs.io/pdfs/ml4t_complete.png"
         }
       ]
-  }, 
-  {
-    "id": "information-security",
-    "name": "Introduction to Information Security",
-    "abbrev": "IIS",
-    "code": "CS6035",
-    "semester": "Fall 2019",
-    "author": "Matt Schlenker",
-    "grade": "A",
-    "icon": "https://assets.omscs.io/courses/cs6035.png",
-    "start": "/information-security/welcome",
-    "completed": true,
-    "pdfs": [
-      {
-        "productUrl": "https://payhip.com/b/51wH",
-        "name": "Introduction to Information Security - Complete",
-        "description": "The complete set of IIS notes, including lecture notes and exam review materials.",
-        "price": 20,
-        "imageUrl": "https://assets.omscs.io/pdfs/iis_complete.png"
-      },
-      {
-        "productUrl": "https://payhip.com/b/X1j0",
-        "name": "Introduction to Information Security - Lecture Notes",
-        "description": "The complete set of IIS lecture notes, covering content from all twenty-one lectures.",
-        "price": 20,
-        "imageUrl": "https://assets.omscs.io/pdfs/iis_lecture_notes.png"
-      },
-      {
-        "productUrl": "https://payhip.com/b/34Xw",
-        "name": "Introduction to Information Security - Exam Review",
-        "description": "The complete set of IIS exam review notes, containing all Udacity quizzes as well as study material for the midterm and final exams.",
-        "price": 10,
-        "imageUrl": "https://assets.omscs.io/pdfs/iis_exam_review.png"
-      }
-    ]
-  }, 
-  {
-    "name": "Computer Networking",
-    "id": "computer-networks",
-    "abbrev": "CN",
-    "code": "CS6250",
-    "semester": "Spring 2019",
-    "author": "Matt Schlenker",
-    "grade": "A",
-    "icon": "https://assets.omscs.io/courses/cs6250.png",
-    "start": "/computer-networks/welcome",
-    "completed": true,
-    "pdfs": [
-      {   
-        "productUrl": "https://payhip.com/b/9UGM",
-        "name": "Computer Networks - Complete",
-        "description": "The complete set of CN lecture notes, covering content from all sixteen lectures.",
-        "price": 10,
-        "imageUrl": "https://assets.omscs.io/pdfs/cn_complete.png"  
-      }
-    ]
-  },
-  {
+    },
+    {
+      "id": "information-security",
+      "name": "Introduction to Information Security",
+      "abbrev": "IIS",
+      "code": "CS6035",
+      "semester": "Fall 2019",
+      "author": "Matt Schlenker",
+      "grade": "A",
+      "icon": "https://assets.omscs.io/courses/cs6035.png",
+      "start": "/information-security/welcome",
+      "completed": true,
+      "pdfs": [
+        {
+          "productUrl": "https://payhip.com/b/51wH",
+          "name": "Introduction to Information Security - Complete",
+          "description": "The complete set of IIS notes, including lecture notes and exam review materials.",
+          "price": 20,
+          "imageUrl": "https://assets.omscs.io/pdfs/iis_complete.png"
+        },
+        {
+          "productUrl": "https://payhip.com/b/X1j0",
+          "name": "Introduction to Information Security - Lecture Notes",
+          "description": "The complete set of IIS lecture notes, covering content from all twenty-one lectures.",
+          "price": 20,
+          "imageUrl": "https://assets.omscs.io/pdfs/iis_lecture_notes.png"
+        },
+        {
+          "productUrl": "https://payhip.com/b/34Xw",
+          "name": "Introduction to Information Security - Exam Review",
+          "description": "The complete set of IIS exam review notes, containing all Udacity quizzes as well as study material for the midterm and final exams.",
+          "price": 10,
+          "imageUrl": "https://assets.omscs.io/pdfs/iis_exam_review.png"
+        }
+      ]
+    },
+    {
+      "name": "Computer Networking",
+      "id": "computer-networks",
+      "abbrev": "CN",
+      "code": "CS6250",
+      "semester": "Spring 2019",
+      "author": "Matt Schlenker",
+      "grade": "A",
+      "icon": "https://assets.omscs.io/courses/cs6250.png",
+      "start": "/computer-networks/welcome",
+      "completed": true,
+      "pdfs": [
+        {
+          "productUrl": "https://payhip.com/b/9UGM",
+          "name": "Computer Networks - Complete",
+          "description": "The complete set of CN lecture notes, covering content from all sixteen lectures.",
+          "price": 10,
+          "imageUrl": "https://assets.omscs.io/pdfs/cn_complete.png"
+        }
+      ]
+    },
+    {
       "id": "operating-systems",
       "name": "Graduate Introduction to Operating Systems",
       "abbrev": "GIOS",
@@ -163,6 +163,18 @@
           "imageUrl": "https://assets.omscs.io/pdfs/gios_exam_review.png"
         }
       ]
+    },
+    {
+      "id": "secure-computer-systems",
+      "name": "Secure Computer Systems",
+      "abbrev": "SCS",
+      "code": "CS6238",
+      "semester": "Spring 2021",
+      "author": "Matthew Caseres",
+      "grade": "TBD",
+      "icon": "https://assets.omscs.io/courses/cs6238.png",
+      "start": "/secure-computer-systems/00-welcome",
+      "completed": false
     }
   ]
 }

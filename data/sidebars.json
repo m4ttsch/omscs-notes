@@ -280,5 +280,17 @@
         "comparing-systems-cont"
       ]
     }
+  ],
+  "secure-computer-systems": [
+    {
+      "section": "Lecture Notes",
+      "notes": [
+        "00-welcome",
+        "01-getting-started",
+        "02-design-principles",
+        "03-protecting-tcb",
+        "04-virtualization"
+      ]
+    }
   ]
 }
