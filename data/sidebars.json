@@ -290,7 +290,8 @@
         "02-design-principles",
         "03-protecting-tcb",
         "04-virtualization",
-        "05-authentication"
+        "05-authentication",
+        "06-DAC"
       ]
     }
   ]
