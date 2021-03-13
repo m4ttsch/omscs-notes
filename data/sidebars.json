@@ -291,7 +291,16 @@
         "03-protecting-tcb",
         "04-virtualization",
         "05-authentication",
-        "06-DAC"
+        "06-DAC",
+        "07-MAC",
+        "09-MAC-selinux",
+        "10-covert-channels"
+      ]
+    },
+    {
+      "section": "Exam Review",
+      "notes": [
+        "midterm-exam-review"
       ]
     }
   ]
