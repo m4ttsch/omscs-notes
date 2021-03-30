@@ -294,7 +294,8 @@
         "06-DAC",
         "07-MAC",
         "09-MAC-selinux",
-        "10-covert-channels"
+        "10-covert-channels",
+	"11-distributed-basics"
       ]
     },
     {
