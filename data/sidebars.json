@@ -295,7 +295,10 @@
         "07-MAC",
         "09-MAC-selinux",
         "10-covert-channels",
-	"11-distributed-basics"
+    	"11-distributed-basics",
+        "12-distributed-systems-2",
+        "13-database-security-basics",
+        "14-database-security-multilevel"
       ]
     },
     {
