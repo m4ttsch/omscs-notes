@@ -1,6 +1,32 @@
 {
   "courses": [
     {
+      "id": "software-architecture-design",
+      "name": "Software Architecture & Design",
+      "abbrev": "SAD",
+      "code": "CS6310",
+      "semester": "Summer 2021",
+      "author": "Matt Schlenker",
+      "grade": "TBD",
+      "icon": "https://assets.omscs.io/courses/cs6310.png",
+      "start": "/software-architecture-design/welcome",
+      "completed": false,
+      "pdfs": []
+    },
+    {
+      "id": "secure-computer-systems",
+      "name": "Secure Computer Systems",
+      "abbrev": "SCS",
+      "code": "CS6238",
+      "semester": "Spring 2021",
+      "author": "Matthew Caseres",
+      "grade": "A",
+      "icon": "https://assets.omscs.io/courses/cs6238.png",
+      "start": "/secure-computer-systems/00-welcome",
+      "completed": true,
+      "pdfs": []
+    },
+    {
       "id": "simulation",
       "name": "Simulation",
       "abbrev": "SIM",
@@ -163,19 +189,6 @@
           "imageUrl": "https://assets.omscs.io/pdfs/gios_exam_review.png"
         }
       ]
-    },
-    {
-      "id": "secure-computer-systems",
-      "name": "Secure Computer Systems",
-      "abbrev": "SCS",
-      "code": "CS6238",
-      "semester": "Spring 2021",
-      "author": "Matthew Caseres",
-      "grade": "TBD",
-      "icon": "https://assets.omscs.io/courses/cs6238.png",
-      "start": "/secure-computer-systems/00-welcome",
-      "completed": false,
-      "pdfs": []
     }
   ]
 }
