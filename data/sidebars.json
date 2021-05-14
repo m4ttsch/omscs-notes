@@ -308,5 +308,17 @@
         "final-exam-review"
       ]
     }
+  ],
+  "software-architecture-design": [
+    {
+      "section": "Start Here",
+      "notes": [
+        "welcome"
+      ]
+    },
+    {
+      "section": "Lecture Notes",
+      "notes": []
+    }
   ]
 }
