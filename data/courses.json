@@ -11,7 +11,8 @@
       "icon": "https://assets.omscs.io/courses/cs6310.png",
       "start": "/software-architecture-design/welcome",
       "completed": false,
-      "pdfs": []
+      "pdfs": [
+      ]
     },
     {
       "id": "secure-computer-systems",
@@ -24,7 +25,32 @@
       "icon": "https://assets.omscs.io/courses/cs6238.png",
       "start": "/secure-computer-systems/00-welcome",
       "completed": true,
-      "pdfs": []
+      "pdfs": [
+        {
+          "id": "complete",
+          "productUrl": "https://payhip.com/b/0lhx",
+          "name": "Secure Computing Systems - Complete",
+          "description": "The complete set of SCS notes, including lecture notes and exam review materials.",
+          "price": 20,
+          "imageUrl": "https://assets.omscs.io/pdfs/scs_complete.png"
+        },
+        {
+          "id": "lecture-notes",
+          "productUrl": "https://payhip.com/b/FZP3",
+          "name": "Secure Computing Systems - Lecture Notes",
+          "description": "The complete set of SCS lecture notes, covering content from all thirteen lectures.",
+          "price": 20,
+          "imageUrl": "https://assets.omscs.io/pdfs/scs_lecture_notes.png"
+        },
+        {
+          "id": "exam-review",
+          "productUrl": "https://payhip.com/b/U4Hl",
+          "name": "Secure Computing Systems - Exam Review",
+          "description": "The complete set of SCS exam review notes, containing study material for the midterm and final exams.",
+          "price": 10,
+          "imageUrl": "https://assets.omscs.io/pdfs/scs_exam_review.png"
+        }
+      ]
     },
     {
       "id": "simulation",
