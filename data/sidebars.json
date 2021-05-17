@@ -283,9 +283,37 @@
   ],
   "secure-computer-systems": [
     {
+      "section": "Start Here",
+      "notes": [
+        "00-welcome"
+      ]
+    },
+    {
+      "section": "Download Notes",
+      "notes": [
+        {
+          "lecture": null,
+          "title": "SCS Complete",
+          "path": "https://payhip.com/b/0lhx",
+          "external": true
+        },
+        {
+          "lecture": null,
+          "title": "SCS Lecture Notes",
+          "path": "https://payhip.com/b/FZP3",
+          "external": true
+        },
+        {
+          "lecture": null,
+          "title": "SCS Exam Review",
+          "path": "https://payhip.com/b/U4Hl",
+          "external": true
+        }
+      ]
+    },
+    {
       "section": "Lecture Notes",
       "notes": [
-        "00-welcome",
         "01-getting-started",
         "02-design-principles",
         "03-protecting-tcb",
