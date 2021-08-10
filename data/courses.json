@@ -1,20 +1,6 @@
 {
   "courses": [
     {
-      "id": "software-architecture-design",
-      "name": "Software Architecture & Design",
-      "abbrev": "SAD",
-      "code": "CS6310",
-      "semester": "Summer 2021",
-      "author": "Matt Schlenker",
-      "grade": "TBD",
-      "icon": "https://assets.omscs.io/courses/cs6310.png",
-      "start": "/software-architecture-design/welcome",
-      "completed": false,
-      "pdfs": [
-      ]
-    },
-    {
       "id": "secure-computer-systems",
       "name": "Secure Computer Systems",
       "abbrev": "SCS",

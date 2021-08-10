@@ -2,9 +2,7 @@
   "operating-systems": [
     {
       "section": "Start Here",
-      "notes": [
-        "welcome"
-      ]
+      "notes": ["welcome"]
     },
     {
       "section": "Download Notes",
@@ -52,18 +50,13 @@
     },
     {
       "section": "Exam Review",
-      "notes": [
-        "midterm-exam-review-questions",
-        "final-exam-review-questions"
-      ]
+      "notes": ["midterm-exam-review-questions", "final-exam-review-questions"]
     }
   ],
   "computer-networks": [
     {
       "section": "Start Here",
-      "notes": [
-        "welcome"
-      ]
+      "notes": ["welcome"]
     },
     {
       "section": "Download Notes",
@@ -101,9 +94,7 @@
   "information-security": [
     {
       "section": "Start Here",
-      "notes": [
-        "welcome"
-      ]
+      "notes": ["welcome"]
     },
     {
       "section": "Download Notes",
@@ -166,9 +157,7 @@
   "machine-learning-trading": [
     {
       "section": "Start Here",
-      "notes": [
-        "welcome"
-      ]
+      "notes": ["welcome"]
     },
     {
       "section": "Download Notes",
@@ -214,17 +203,13 @@
     },
     {
       "section": "Exam Review",
-      "notes": [
-        "udacity-quizzes"
-      ]
+      "notes": ["udacity-quizzes"]
     }
   ],
   "simulation": [
     {
       "section": "Start Here",
-      "notes": [
-        "welcome"
-      ]
+      "notes": ["welcome"]
     },
     {
       "section": "Download Notes",
@@ -284,9 +269,7 @@
   "secure-computer-systems": [
     {
       "section": "Start Here",
-      "notes": [
-        "00-welcome"
-      ]
+      "notes": ["00-welcome"]
     },
     {
       "section": "Download Notes",
@@ -323,7 +306,7 @@
         "07-MAC",
         "09-MAC-selinux",
         "10-covert-channels",
-    	"11-distributed-basics",
+        "11-distributed-basics",
         "12-distributed-systems-2",
         "13-database-security-basics",
         "14-database-security-multilevel"
@@ -331,22 +314,7 @@
     },
     {
       "section": "Exam Review",
-      "notes": [
-        "midterm-exam-review",
-        "final-exam-review"
-      ]
-    }
-  ],
-  "software-architecture-design": [
-    {
-      "section": "Start Here",
-      "notes": [
-        "welcome"
-      ]
-    },
-    {
-      "section": "Lecture Notes",
-      "notes": []
+      "notes": ["midterm-exam-review", "final-exam-review"]
     }
   ]
 }
