@@ -1,6 +1,19 @@
 {
   "courses": [
     {
+      "name": "Computer Networks",
+      "id": "computer-networks",
+      "abbrev": "CN",
+      "code": "CS6250",
+      "semester": "Spring 2019",
+      "author": "Josh Kuun",
+      "grade": "A",
+      "icon": "https://assets.omscs.io/courses/cs6250.png",
+      "start": "/computer-networks/welcome",
+      "completed": true,
+      "pdfs": []
+    },
+    {
       "id": "secure-computer-systems",
       "name": "Secure Computer Systems",
       "abbrev": "SCS",
@@ -144,20 +157,21 @@
       ]
     },
     {
-      "name": "Computer Networking",
-      "id": "computer-networks",
+      "name": "Computer Networks (OLD)",
+      "id": "computer-networks-old",
       "abbrev": "CN",
       "code": "CS6250",
       "semester": "Spring 2019",
       "author": "Matt Schlenker",
       "grade": "A",
       "icon": "https://assets.omscs.io/courses/cs6250.png",
-      "start": "/computer-networks/welcome",
+      "start": "/computer-networks-old/welcome",
       "completed": true,
+      "displayInHeader": false,
       "pdfs": [
         {
           "productUrl": "https://payhip.com/b/9UGM",
-          "name": "Computer Networks - Complete",
+          "name": "Computer Networks - Complete (OLD)",
           "description": "The complete set of CN lecture notes, covering content from all sixteen lectures.",
           "price": 10,
           "imageUrl": "https://assets.omscs.io/pdfs/cn_complete.png"

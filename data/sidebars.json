@@ -53,7 +53,7 @@
       "notes": ["midterm-exam-review-questions", "final-exam-review-questions"]
     }
   ],
-  "computer-networks": [
+  "computer-networks-old": [
     {
       "section": "Start Here",
       "notes": ["welcome"]
@@ -63,7 +63,7 @@
       "notes": [
         {
           "lecture": null,
-          "title": "CN Complete",
+          "title": "CN Complete (OLD)",
           "path": "https://payhip.com/b/9UGM",
           "external": true
         }
@@ -315,6 +315,29 @@
     {
       "section": "Exam Review",
       "notes": ["midterm-exam-review", "final-exam-review"]
+    }
+  ],
+  "computer-networks": [
+    {
+      "section": "Start Here",
+      "notes": ["welcome"]
+    },
+    {
+      "section": "Lecture Notes",
+      "notes": [
+        "introduction-history-and-internet-architecture",
+        "transport-and-application-layers",
+        "intradomain-routing",
+        "autonomous-system-relationships-and-interdomain-routing",
+        "router-design-and-algorithms-part-1",
+        "router-design-and-algorithms-part-2",
+        "software-defined-networking-part-1",
+        "software-defined-networking-part-2",
+        "internet-security",
+        "internet-surveillance-and-censorship",
+        "applications-video",
+        "applications-cdns-and-overlay-networks"
+      ]
     }
   ]
 }

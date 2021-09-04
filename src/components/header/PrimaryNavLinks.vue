@@ -2,7 +2,7 @@
   <div class="PrimaryNavLinks">
     <div class="flex justify-center items-center">
       <g-link
-        v-for="(course, i) in courses"
+        v-for="(course, i) in displayedCourses"
         :key="i"
         :to="course.start"
         class="mr-4 hover:text-indigo-800"
@@ -27,6 +27,12 @@ export default {
 
   data() {
     return { courses }
+  },
+
+  computed: {
+    displayedCourses() {
+      return this.courses.filter((course) => course.displayInHeader !== false)
+    },
   },
 }
 </script>
