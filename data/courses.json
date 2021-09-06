@@ -10,8 +10,7 @@
       "grade": "A",
       "icon": "https://assets.omscs.io/courses/cs6250.png",
       "start": "/computer-networks/welcome",
-      "completed": true,
-      "pdfs": []
+      "completed": true
     },
     {
       "id": "secure-computer-systems",
@@ -23,33 +22,7 @@
       "grade": "A",
       "icon": "https://assets.omscs.io/courses/cs6238.png",
       "start": "/secure-computer-systems/00-welcome",
-      "completed": true,
-      "pdfs": [
-        {
-          "id": "complete",
-          "productUrl": "https://payhip.com/b/0lhx",
-          "name": "Secure Computing Systems - Complete",
-          "description": "The complete set of SCS notes, including lecture notes and exam review materials.",
-          "price": 20,
-          "imageUrl": "https://assets.omscs.io/pdfs/scs_complete.png"
-        },
-        {
-          "id": "lecture-notes",
-          "productUrl": "https://payhip.com/b/FZP3",
-          "name": "Secure Computing Systems - Lecture Notes",
-          "description": "The complete set of SCS lecture notes, covering content from all thirteen lectures.",
-          "price": 20,
-          "imageUrl": "https://assets.omscs.io/pdfs/scs_lecture_notes.png"
-        },
-        {
-          "id": "exam-review",
-          "productUrl": "https://payhip.com/b/U4Hl",
-          "name": "Secure Computing Systems - Exam Review",
-          "description": "The complete set of SCS exam review notes, containing study material for the midterm and final exams.",
-          "price": 10,
-          "imageUrl": "https://assets.omscs.io/pdfs/scs_exam_review.png"
-        }
-      ]
+      "completed": true
     },
     {
       "id": "simulation",
@@ -61,44 +34,7 @@
       "icon": "https://assets.omscs.io/courses/isye6644.png",
       "start": "/simulation/welcome",
       "completed": true,
-      "grade": "A",
-      "pdfs": [
-        {
-          "productUrl": "https://payhip.com/b/Lk14",
-          "name": "SIM - Exam 1 Cheat Sheet",
-          "description": "A two-page PDF cheat sheet for Simulation Exam 1. The source .tex file is included for easy editing.",
-          "price": 10,
-          "imageUrl": "https://assets.omscs.io/pdfs/sim-exam-1-cheat-sheet.png"
-        },
-        {
-          "productUrl": "https://payhip.com/b/POqp",
-          "name": "SIM - Exam 2 Cheat Sheet",
-          "description": "A four-page PDF cheat sheet for Simulation Exam 2. The source .tex file is included for easy editing.",
-          "price": 10,
-          "imageUrl": "https://assets.omscs.io/pdfs/sim-exam-2-cheat-sheet.png"
-        },
-        {
-          "productUrl": "https://payhip.com/b/mZis",
-          "name": "SIM - Exam 3 Cheat Sheet",
-          "description": "A six-page PDF cheat sheet for Simulation Exam 3. The source .tex file is included for easy editing.",
-          "price": 10,
-          "imageUrl": "https://assets.omscs.io/pdfs/sim-exam-3-cheat-sheet.png"
-        },
-        {
-          "productUrl": "https://payhip.com/b/kzli",
-          "name": "SIM - Lecture Notes",
-          "description": "The complete set of Simulation lecture notes, covering content from all ten modules.",
-          "price": 20,
-          "imageUrl": "https://assets.omscs.io/pdfs/sim_lecture_notes.png"
-        },
-        {
-          "productUrl": "https://payhip.com/b/PZen",
-          "name": "SIM - Complete",
-          "description": "The complete set of Simulation notes, including lecture notes and exam review materials.",
-          "price": 40,
-          "imageUrl": "https://assets.omscs.io/pdfs/sim_complete.png"
-        }
-      ]
+      "grade": "A"
     },
     {
       "id": "machine-learning-trading",
@@ -110,16 +46,7 @@
       "icon": "https://assets.omscs.io/courses/cs7646.png",
       "start": "/machine-learning-trading/welcome",
       "completed": true,
-      "grade": "A",
-      "pdfs": [
-        {
-          "productUrl": "https://payhip.com/b/h5Pv",
-          "name": "Machine Learning for Trading - Complete",
-          "description": "The complete set of ML4T notes, including lecture notes and Udacity quizzes.",
-          "price": 20,
-          "imageUrl": "https://assets.omscs.io/pdfs/ml4t_complete.png"
-        }
-      ]
+      "grade": "A"
     },
     {
       "id": "information-security",
@@ -131,30 +58,7 @@
       "grade": "A",
       "icon": "https://assets.omscs.io/courses/cs6035.png",
       "start": "/information-security/welcome",
-      "completed": true,
-      "pdfs": [
-        {
-          "productUrl": "https://payhip.com/b/51wH",
-          "name": "Introduction to Information Security - Complete",
-          "description": "The complete set of IIS notes, including lecture notes and exam review materials.",
-          "price": 20,
-          "imageUrl": "https://assets.omscs.io/pdfs/iis_complete.png"
-        },
-        {
-          "productUrl": "https://payhip.com/b/X1j0",
-          "name": "Introduction to Information Security - Lecture Notes",
-          "description": "The complete set of IIS lecture notes, covering content from all twenty-one lectures.",
-          "price": 20,
-          "imageUrl": "https://assets.omscs.io/pdfs/iis_lecture_notes.png"
-        },
-        {
-          "productUrl": "https://payhip.com/b/34Xw",
-          "name": "Introduction to Information Security - Exam Review",
-          "description": "The complete set of IIS exam review notes, containing all Udacity quizzes as well as study material for the midterm and final exams.",
-          "price": 10,
-          "imageUrl": "https://assets.omscs.io/pdfs/iis_exam_review.png"
-        }
-      ]
+      "completed": true
     },
     {
       "name": "Computer Networks (OLD)",
@@ -167,16 +71,7 @@
       "icon": "https://assets.omscs.io/courses/cs6250.png",
       "start": "/computer-networks-old/welcome",
       "completed": true,
-      "displayInHeader": false,
-      "pdfs": [
-        {
-          "productUrl": "https://payhip.com/b/9UGM",
-          "name": "Computer Networks - Complete (OLD)",
-          "description": "The complete set of CN lecture notes, covering content from all sixteen lectures.",
-          "price": 10,
-          "imageUrl": "https://assets.omscs.io/pdfs/cn_complete.png"
-        }
-      ]
+      "displayInHeader": false
     },
     {
       "id": "operating-systems",
@@ -188,33 +83,7 @@
       "grade": "A",
       "icon": "https://assets.omscs.io/courses/cs6200.png",
       "start": "/operating-systems/welcome",
-      "completed": true,
-      "pdfs": [
-        {
-          "id": "complete",
-          "productUrl": "https://payhip.com/b/9I1Q",
-          "name": "Graduate Introduction to Operating Systems - Complete",
-          "description": "The complete set of GIOS notes, including lecture notes and exam review materials.",
-          "price": 20,
-          "imageUrl": "https://assets.omscs.io/pdfs/gios_complete.png"
-        },
-        {
-          "id": "lecture-notes",
-          "productUrl": "https://payhip.com/b/VJ40",
-          "name": "Graduate Introduction to Operating Systems - Lecture Notes",
-          "description": "The complete set of GIOS lecture notes, covering content from all fifteen lectures.",
-          "price": 20,
-          "imageUrl": "https://assets.omscs.io/pdfs/gios_lecture_notes.png"
-        },
-        {
-          "id": "exam-review",
-          "productUrl": "https://payhip.com/b/BCoS",
-          "name": "Graduate Introduction to Operating Systems - Exam Review",
-          "description": "The complete set of GIOS exam review notes, containing study material for the midterm and final exams.",
-          "price": 10,
-          "imageUrl": "https://assets.omscs.io/pdfs/gios_exam_review.png"
-        }
-      ]
+      "completed": true
     }
   ]
 }
