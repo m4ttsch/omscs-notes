@@ -323,6 +323,17 @@
       "notes": ["welcome"]
     },
     {
+      "section": "Download Notes",
+      "notes": [
+        {
+          "lecture": null,
+          "title": "CN Complete",
+          "path": "https://payhip.com/b/tCvzd",
+          "external": true
+        }
+      ]
+    },
+    {
       "section": "Lecture Notes",
       "notes": [
         "introduction-history-and-internet-architecture",
