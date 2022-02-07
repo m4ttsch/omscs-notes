@@ -7,6 +7,9 @@
     "explore": "gridsome explore",
     "lint": "vue-cli-service lint"
   },
+  "engines": {
+    "node": "14.19.0"
+  },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",
     "@gridsome/source-filesystem": "^0.6.2",
