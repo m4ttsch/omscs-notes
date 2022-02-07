@@ -9,10 +9,10 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repo
+      - name: Checkout repository and submodules
         uses: actions/checkout@v2
-      - name: Checkout submodules
-        uses: textbook/git-checkout-submodule-action@2.0.0
+        with:
+          submodules: recursive
       - name: Install Dependencies
         run: yarn
       - name: Build
