@@ -14,7 +14,7 @@ module.exports = {
     email: 'matt@omscs-notes.com',
     amazon: 'https://amzn.to/2Pai0bO',
     paypal: 'https://www.paypal.me/MatthewSchlenker',
-    buyMeACoffee: 'https://www.buymeacoffee.com/oms-tech',
+    buyMeACoffee: 'https://www.buymeacoffee.com/omstech',
   },
   plugins: [
     {
