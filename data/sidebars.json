@@ -350,5 +350,18 @@
         "applications-cdns-and-overlay-networks"
       ]
     }
+  ],
+  "databases": [
+    {
+      "section": "Start Here",
+      "notes": ["welcome"]
+    },
+    {
+      "section": "Lecture Notes",
+      "notes": [
+        "fundamentals-of-databases",
+        "extended-entity-relationship-model"
+      ]
+    }
   ]
 }

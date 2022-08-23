@@ -16,7 +16,7 @@
         >
           <slot name="sidebar:lg" />
         </div>
-        <div class="w-full lg:w-auto">
+        <div class="w-full lg:w-auto min-h-screen">
           <slot name="content" />
         </div>
       </div>

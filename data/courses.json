@@ -1,6 +1,17 @@
 {
   "courses": [
     {
+      "name": "Databases",
+      "id": "databases",
+      "abbrev": "DB",
+      "code": "CS6400",
+      "semester": "Fall 2022",
+      "author": "Matt Schlenker",
+      "icon": "https://assets.omscs.io/courses/cs6400.png",
+      "start": "/databases/welcome",
+      "completed": false
+    },
+    {
       "name": "Computer Networks",
       "id": "computer-networks",
       "abbrev": "CN",
