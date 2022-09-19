@@ -360,7 +360,16 @@
       "section": "Lecture Notes",
       "notes": [
         "fundamentals-of-databases",
-        "extended-entity-relationship-model"
+        "extended-entity-relationship-model",
+        "eer-relational-mapping",
+        "relational-algebra-and-calculus"
+      ]
+    },
+    {
+      "section": "Project Notes",
+      "notes": [
+        "methodology-one-analysis",
+        "methodology-two-specification"
       ]
     }
   ]
