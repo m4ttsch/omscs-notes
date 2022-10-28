@@ -362,7 +362,8 @@
         "fundamentals-of-databases",
         "extended-entity-relationship-model",
         "eer-relational-mapping",
-        "relational-algebra-and-calculus"
+        "relational-algebra-and-calculus", 
+        "sql"
       ]
     },
     {
