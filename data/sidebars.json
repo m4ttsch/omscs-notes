@@ -365,14 +365,6 @@
         "relational-algebra-and-calculus", 
         "sql"
       ]
-    },
-    {
-      "section": "Project Notes",
-      "notes": [
-        "methodology-one-analysis",
-        "methodology-two-specification",
-        "methodology-three-design"
-      ]
     }
   ]
 }
