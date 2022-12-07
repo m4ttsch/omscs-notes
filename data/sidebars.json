@@ -363,7 +363,8 @@
         "extended-entity-relationship-model",
         "eer-relational-mapping",
         "relational-algebra-and-calculus", 
-        "sql"
+        "sql",
+        "normalization"
       ]
     }
   ]
