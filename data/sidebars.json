@@ -364,7 +364,8 @@
         "eer-relational-mapping",
         "relational-algebra-and-calculus", 
         "sql",
-        "normalization"
+        "normalization",
+        "efficiency-indexing-physical-design"
       ]
     }
   ]
