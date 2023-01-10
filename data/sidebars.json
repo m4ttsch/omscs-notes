@@ -368,5 +368,16 @@
         "efficiency-indexing-physical-design"
       ]
     }
+  ],
+  "robotics-ai-techniques": [
+    {
+      "section": "Start Here",
+      "notes": [
+        "welcome",
+        "localization-overview",
+        "kalman-filters",
+        "particle-filters"
+      ]
+    }
   ]
 }

@@ -1,6 +1,17 @@
 {
   "courses": [
     {
+      "name": "Robotics: AI Techniques",
+      "id": "robotics-ai-techniques",
+      "abbrev": "RAIT",
+      "code": "CS7638",
+      "semester": "Spring 2023",
+      "author": "Matt Schlenker",
+      "icon": "https://assets.omscs.io/courses/cs7638.png",
+      "start": "/robotics-ai-techniques/welcome",
+      "completed": false
+    },
+    {
       "name": "Databases",
       "id": "databases",
       "abbrev": "DB",
@@ -9,7 +20,8 @@
       "author": "Matt Schlenker",
       "icon": "https://assets.omscs.io/courses/cs6400.png",
       "start": "/databases/welcome",
-      "completed": false
+      "completed": true,
+      "grade": "A"
     },
     {
       "name": "Computer Networks",

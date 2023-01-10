@@ -7,7 +7,7 @@
     "explore": "gridsome explore",
     "lint": "vue-cli-service lint"
   },
-  "engines": {
+  "volta": {
     "node": "14.19.0"
   },
   "dependencies": {
