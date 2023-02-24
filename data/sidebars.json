@@ -376,7 +376,8 @@
         "welcome",
         "localization-overview",
         "kalman-filters",
-        "particle-filters"
+        "particle-filters",
+        "kinematic-bicycle-model"
       ]
     }
   ]
