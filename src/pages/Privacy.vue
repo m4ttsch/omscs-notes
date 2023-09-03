@@ -849,7 +849,7 @@
       <ul>
         <li>
           By email:
-          <a href="mailto:matt@omscs-notes.com">mailto:matt@omscs-notes.com</a>
+          <a href="mailto:matt@oms.fyi">mailto:matt@oms.fyi</a>
         </li>
       </ul>
     </div>
