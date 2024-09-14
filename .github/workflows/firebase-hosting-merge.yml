@@ -13,6 +13,10 @@ jobs:
       - uses: actions/checkout@v4
         with:
           submodules: recursive
+      - name: Install python2
+        run: |
+          sudo apt-get update
+          sudo apt-get install python2
       - name: Install Dependencies
         run: yarn
       - name: Setup Node
