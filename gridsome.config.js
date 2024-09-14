@@ -10,7 +10,7 @@ module.exports = {
   metadata: {
     mainGithub: 'https://github.com/m4ttsch/omscs-notes',
     notesGithub: 'https://github.com/m4ttsch/omscs-notes-notes',
-    linkedin: 'https://www.linkedin.com/in/matthew-schlenker',
+    linkedin: 'https://www.linkedin.com/in/m4ttsch',
     email: 'matt@oms.fyi',
     amazon: 'https://amzn.to/2Pai0bO',
     paypal: 'https://www.paypal.me/MatthewSchlenker',
